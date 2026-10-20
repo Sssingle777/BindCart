@@ -1,0 +1,231 @@
+{
+  "realBrowser": true,
+  "viewports": [
+    {
+      "page": "intro",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "intro",
+      "width": 1440,
+      "height": 900,
+      "overflow": false
+    },
+    {
+      "page": "intro",
+      "width": 1366,
+      "height": 768,
+      "overflow": false
+    },
+    {
+      "page": "intro",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "dual",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false
+    },
+    {
+      "page": "dual",
+      "width": 1440,
+      "height": 900,
+      "overflow": false
+    },
+    {
+      "page": "dual",
+      "width": 1366,
+      "height": 768,
+      "overflow": false
+    },
+    {
+      "page": "dual",
+      "width": 390,
+      "height": 844,
+      "overflow": false
+    },
+    {
+      "page": "console",
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "roles": [
+        {
+          "id": "issuer",
+          "width": 150.125,
+          "height": 120,
+          "x": 476.015625,
+          "y": 542.546875
+        },
+        {
+          "id": "holder",
+          "width": 150.125,
+          "height": 120,
+          "x": 674.1875,
+          "y": 687.75
+        },
+        {
+          "id": "device",
+          "width": 150.125,
+          "height": 120,
+          "x": 872.34375,
+          "y": 542.546875
+        },
+        {
+          "id": "verifier",
+          "width": 150.125,
+          "height": 120,
+          "x": 872.34375,
+          "y": 687.75
+        },
+        {
+          "id": "owner",
+          "width": 150.125,
+          "height": 120,
+          "x": 476.015625,
+          "y": 832.9375
+        },
+        {
+          "id": "ledger",
+          "width": 150.125,
+          "height": 120,
+          "x": 872.34375,
+          "y": 832.9375
+        }
+      ]
+    },
+    {
+      "page": "console",
+      "width": 1366,
+      "height": 768,
+      "overflow": false,
+      "roles": [
+        {
+          "id": "issuer",
+          "width": 150.125,
+          "height": 120,
+          "x": 199.015625,
+          "y": 230.546875
+        },
+        {
+          "id": "holder",
+          "width": 150.125,
+          "height": 120,
+          "x": 397.1875,
+          "y": 375.75
+        },
+        {
+          "id": "device",
+          "width": 150.125,
+          "height": 120,
+          "x": 595.34375,
+          "y": 230.546875
+        },
+        {
+          "id": "verifier",
+          "width": 150.125,
+          "height": 120,
+          "x": 595.34375,
+          "y": 375.75
+        },
+        {
+          "id": "owner",
+          "width": 150.125,
+          "height": 120,
+          "x": 199.015625,
+          "y": 520.9375
+        },
+        {
+          "id": "ledger",
+          "width": 150.125,
+          "height": 120,
+          "x": 595.34375,
+          "y": 520.9375
+        }
+      ]
+    },
+    {
+      "page": "console",
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "roles": [
+        {
+          "id": "issuer",
+          "width": 142.796875,
+          "height": 124,
+          "x": 35.1953125,
+          "y": 252.625
+        },
+        {
+          "id": "holder",
+          "width": 142.796875,
+          "height": 124,
+          "x": 35.1953125,
+          "y": 404.4375
+        },
+        {
+          "id": "device",
+          "width": 142.796875,
+          "height": 124,
+          "x": 211.9921875,
+          "y": 252.625
+        },
+        {
+          "id": "verifier",
+          "width": 142.796875,
+          "height": 124,
+          "x": 211.9921875,
+          "y": 404.4375
+        },
+        {
+          "id": "owner",
+          "width": 142.796875,
+          "height": 124,
+          "x": 35.1953125,
+          "y": 556.234375
+        },
+        {
+          "id": "ledger",
+          "width": 142.796875,
+          "height": 124,
+          "x": 211.9921875,
+          "y": 556.234375
+        }
+      ]
+    }
+  ],
+  "contrast": [
+    {
+      "page": "intro (gradient evaluated conservatively at #e4f0ff)",
+      "count": 105,
+      "failures": [],
+      "minimum": 4.74
+    },
+    {
+      "page": "dual shell",
+      "count": 33,
+      "failures": [],
+      "minimum": 5.13
+    },
+    {
+      "page": "console",
+      "count": 1368,
+      "failures": [],
+      "minimum": 4.61
+    },
+    {
+      "page": "role evidence dialog",
+      "count": 1380,
+      "failures": [],
+      "minimum": 4.61
+    }
+  ],
+  "errors": [],
+  "status": "passed"
+}

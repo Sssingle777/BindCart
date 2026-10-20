@@ -1,0 +1,80 @@
+{
+  "edition": "ShoppingAuth Light Blue",
+  "date": "2026-10-20",
+  "baseline": "ShoppingAuth-Visual-V2-20261019",
+  "presentationFiles": [
+    "app/public/dual.css",
+    "app/public/dual.html",
+    "app/public/intro.css",
+    "app/public/intro.html",
+    "app/public/mechanism-visual.css"
+  ],
+  "sourceFilesCompared": 17917,
+  "unchangedFiles": 17911,
+  "businessCodeUnchanged": true,
+  "originalTestsUnchanged": true,
+  "htmlStructureAndSvgGeometryUnchanged": true,
+  "nonVisualCssDeclarationsUnchanged": true,
+  "platformStyleSync": "passed",
+  "tests": {
+    "unit": {
+      "passed": 58,
+      "failed": 0
+    },
+    "introUI": {
+      "passed": 10
+    },
+    "manualUI": {
+      "passed": 8,
+      "consoleClicks": 21,
+      "idleChecks": 26,
+      "payments": 1,
+      "amount": "34.98 TEST_USDC"
+    },
+    "securityExperiments": {
+      "passed": 2,
+      "additionalPayments": 0
+    },
+    "themeUI": "passed",
+    "macHardware": "not tested",
+    "entireRepositorySuite": "not rerun"
+  },
+  "files": [
+    {
+      "path": "READ-FIRST.txt",
+      "bytes": 2836,
+      "sha256": "8cf4d41caa3617c86524ca156cf2e6dabe8fcbdb92471f371b7b8fdec5cf2f1f"
+    },
+    {
+      "path": "app/public/dual.css",
+      "bytes": 11134,
+      "sha256": "fdf4209d9e28e30222d5b6a8ca78d3fb3668dd08601b7bbe020882222b47ded6"
+    },
+    {
+      "path": "app/public/dual.html",
+      "bytes": 5568,
+      "sha256": "0d1f5c83c6244a2ca4c2a25fb21de295491e9ba6e797cbb9b8e4064a246739f2"
+    },
+    {
+      "path": "app/public/intro.css",
+      "bytes": 17512,
+      "sha256": "a4b52e0b53524c7f55be3d187e0f02c6d99d3c46e69a95b8672b25d70bac57a7"
+    },
+    {
+      "path": "app/public/intro.html",
+      "bytes": 17585,
+      "sha256": "a50021496883544f130b4c801e44f412ae935c0ccbbe960077e5d48d32a47176"
+    },
+    {
+      "path": "app/public/mechanism-visual.css",
+      "bytes": 43769,
+      "sha256": "255e348d66b67a0912d575110c85ac0ca109207787da84880bb3d4d78f119c9a"
+    }
+  ],
+  "excluded": [
+    "app/var",
+    "acceptance-runtime-state",
+    "__MACOSX",
+    ".DS_Store"
+  ]
+}

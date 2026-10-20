@@ -1,0 +1,982 @@
+{
+  "id": "4e6f8526-c210-4354-a058-5a1b42086975",
+  "scenarioId": "revoked",
+  "scenario": "revoked",
+  "kind": "white-box",
+  "mode": "bbs-bls",
+  "startedAt": "2026-10-20T04:08:47.244Z",
+  "completedAt": "2026-10-20T04:08:50.049Z",
+  "durationMs": 2805,
+  "completion": "completed",
+  "expected": "W3C_CREDENTIAL_REVOKED",
+  "actual": "W3C_CREDENTIAL_REVOKED",
+  "expectationMet": true,
+  "requestRejected": true,
+  "authenticationIssued": false,
+  "rejectionStage": "credential_status",
+  "error": {
+    "code": "W3C_CREDENTIAL_REVOKED",
+    "message": "签发方已撤销此凭证；完整合法两方证明也不能继续使用。"
+  },
+  "control": {
+    "accepted": true,
+    "challengeId": "5ce6d921-77d5-4ee8-ba22-90f665962f7a",
+    "verificationTrace": {
+      "profile": "dbac-payment",
+      "source": "agent-b",
+      "outcome": "pass",
+      "steps": [
+        {
+          "id": "extension",
+          "title": "协商设备绑定扩展",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "必须使用设备绑定扩展且不携带具名身份请求头。",
+          "evidence": [
+            {
+              "label": "extension / identified headers",
+              "expected": [
+                "https://example.org/a2a-dbac-bbs-bls/v1",
+                false
+              ],
+              "observed": [
+                "https://example.org/a2a-dbac-bbs-bls/v1",
+                false
+              ]
+            }
+          ]
+        },
+        {
+          "id": "envelope",
+          "title": "读取支付请求与设备绑定证明",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "检查正文长度及规范的设备绑定证明编码。",
+          "evidence": [
+            {
+              "label": "body / proof encoded length",
+              "expected": [
+                "<=49152",
+                "<=16384"
+              ],
+              "observed": [
+                2984,
+                4882
+              ]
+            }
+          ]
+        },
+        {
+          "id": "challenge",
+          "title": "核对一次性挑战",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "挑战必须存在且处于有效期内。",
+          "evidence": [
+            {
+              "label": "challenge found / now / expiry (s)",
+              "expected": [
+                true,
+                "now < expiry"
+              ],
+              "observed": [
+                true,
+                1792469328,
+                1792469388
+              ],
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "replay",
+          "title": "检查挑战未使用",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "拒绝已消费的匿名挑战。",
+          "evidence": [
+            {
+              "label": "challenge already used",
+              "expected": false,
+              "observed": false,
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "request_binding",
+          "title": "核对请求哈希",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "实际正文哈希必须等于挑战绑定值。",
+          "evidence": [
+            {
+              "label": "raw body SHA-256",
+              "expected": "fTTPerXnguqoRBwbmpKB1gxe9U7EpSZkwJQaRpa-0sQ",
+              "observed": "fTTPerXnguqoRBwbmpKB1gxe9U7EpSZkwJQaRpa-0sQ",
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "policy_context",
+          "title": "核对日期与方案",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "检查当前披露策略日期以及展示的方案模式。",
+          "evidence": [
+            {
+              "label": "role / scope / epoch / mode",
+              "expected": [
+                "authorized-agent",
+                "payments:pay",
+                "2026-10-20",
+                "bbs-bls"
+              ],
+              "observed": [
+                "authorized-agent",
+                "payments:pay",
+                "2026-10-20",
+                "bbs-bls"
+              ],
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "scope",
+          "title": "核对支付阶段与订单",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "仅允许 payments:pay，并绑定明确阶段、完整订单与收付款条款。",
+          "evidence": [
+            {
+              "label": "method / scope / phase",
+              "expected": [
+                "message/send",
+                "payments:pay",
+                "proposal | authorize | settle"
+              ],
+              "observed": [
+                "message/send",
+                "payments:pay",
+                "proposal"
+              ]
+            },
+            {
+              "label": "payment order ID",
+              "expected": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
+              "observed": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "merchant_order",
+          "title": "核对商家商品订单",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "验证可信商家签名、完整商品快照、订单版本与支付收款目标。",
+          "evidence": [
+            {
+              "label": "trusted merchant / snapshot SHA-256",
+              "expected": "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+              "observed": [
+                "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+                "X4792aPOMriKIwqLJltG-7WGHEOY2Hw37V9JC60nw_g"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "w3c_bbs",
+          "title": "验证 W3C BBS 派生凭证",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "标准库验证可信签发方、披露证明和挑战。",
+          "evidence": [
+            {
+              "label": "proof type / suite / issuer",
+              "expected": [
+                "DataIntegrityProof",
+                "bbs-2023",
+                "did:example:payment-bbs-issuer"
+              ],
+              "observed": [
+                "DataIntegrityProof",
+                "bbs-2023",
+                "did:example:payment-bbs-issuer"
+              ]
+            },
+            {
+              "label": "expected presentationHeader (hex)",
+              "observed": "591e2f15a791085417e2b7e77c70186b871010784fc478da0d6cba4140b4e749",
+              "note": "Verifier input; checked by bbs-2023."
+            }
+          ]
+        },
+        {
+          "id": "schema",
+          "title": "检查固定属性数量",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "展示属性数量必须符合固定 schema。",
+          "evidence": [
+            {
+              "label": "signed attribute count",
+              "expected": 7,
+              "observed": 7,
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "vc_device_binding",
+          "title": "核对 VC 与 eSIM 绑定",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "核对两份签名保护的同一绑定标识。",
+          "evidence": [
+            {
+              "label": "bindingId / mode / device contribution",
+              "expected": [
+                "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+                "bbs-bls",
+                true
+              ],
+              "observed": [
+                "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+                "bbs-bls",
+                true
+              ]
+            },
+            {
+              "label": "hVC: derived credential hash",
+              "observed": "lJzHXKpXm_jtmpQUdj12HhPu17e49cD8CmsE5mlnXB8"
+            }
+          ]
+        },
+        {
+          "id": "proof_structure",
+          "title": "检查展示结构",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "核对版本、套件、模式以及披露属性的结构和索引。",
+          "evidence": [
+            {
+              "label": "version / suite / mode",
+              "expected": [
+                1,
+                "DBAC-BBS-BLS12381-SHA512-v1",
+                "bbs-bls"
+              ],
+              "observed": [
+                1,
+                "DBAC-BBS-BLS12381-SHA512-v1",
+                "bbs-bls"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "disclosure",
+          "title": "验证披露权限",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "逐项检查角色、scope、日期和模式的要求值。",
+          "evidence": [
+            {
+              "label": "required disclosures (index=value)",
+              "expected": [
+                "0=authorized-agent",
+                "1=payments:pay",
+                "2=2026-10-20",
+                "3=bbs-bls",
+                "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+              ],
+              "observed": [
+                "0=authorized-agent",
+                "1=payments:pay",
+                "2=2026-10-20",
+                "3=bbs-bls",
+                "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "proof_encoding",
+          "title": "解析曲线点和标量",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "检查上下文、群元素、证明标量及隐藏属性响应。",
+          "evidence": [
+            {
+              "label": "Abar / Bbar / Cbar (G1)",
+              "observed": [
+                "8aef5d4699728113e5c354d84a2ae7bd6ab4c8e8f4408374e14f1750c25010baff11f3ddc312e3c492b69feef6592a85",
+                "a18270bdb7e468d655a5f460f4a6aa07607cecc9f08ea69a19be32ec45386ce73231f6da36897c8c5250f55884333787",
+                "87bd9e19be5bf0c50803c64c0e8410b9b88c294610ac575e955295f73d7289d712fdb909a4e957a42daafe30572913e2"
+              ]
+            },
+            {
+              "label": "randomized key (G1) / pi_se (G2)",
+              "observed": [
+                "b45d4ce03870e784210b5da785955fe6c9bca9616f032de836be1b2de8edfdd00ded62655c9aae3b801dd3a84e18884f",
+                "b17cf23f30da22140a8873df582724ba28fa7d9954cfb6e22ecf3d2d9decc74c3554f5197f4dbe2c12995232bfb6b0ac00415f8e55d5ee3d83b7ac6cca27c64ad69e012b31b407377ed197a9bd3a55dfd1f1f91a0b4cf4a8e405efeb39bfed4b"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "device_pairing",
+          "title": "验证设备贡献",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "执行适配设备签名的配对等式检查并绑定本次上下文。",
+          "evidence": [
+            {
+              "label": "hash-to-curve point Q (G2)",
+              "observed": "aa0d6acc706b03372166801c743e827465d8951fc7d88395e2a5868d7718921d557bc553429b8330c4cb11d45504949e11edee4205cb0b9ac8b665fe837660d63d14dfe1db02c50aeacf2f32c380e6304f2b56616e596ebe9af5cd9704d5f418"
+            },
+            {
+              "label": "e(H0,pi_se) = e(randomizedKey,Q)",
+              "expected": true,
+              "observed": true,
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "knowledge",
+          "title": "验证知识证明",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "重建线性关系承诺并核对绑定上下文的 Fiat–Shamir 挑战。",
+          "evidence": [
+            {
+              "label": "Fiat-Shamir challenge",
+              "expected": "52c8da3ef2fd508d6ee9714282bd0a6139bb61d6c74f19d6164a582f5e937ccc",
+              "observed": "52c8da3ef2fd508d6ee9714282bd0a6139bb61d6c74f19d6164a582f5e937ccc",
+              "match": true
+            },
+            {
+              "label": "reconstructed T1 / T2 (G1)",
+              "observed": [
+                "8cecd2260a478faa0c9089bebccfbf55fd5b2273a2ecfd7cdfd8a8e436e4f77f1ca0d4de92513294efdb21a2057e7fc9",
+                "8168fb28385f590f1da082991864faffd8a7f60b3a60a9b87f40173b01820f8e25bfe0e48b1d0595c988108191d88839"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "credential_pairing",
+          "title": "验证配套凭证配对",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "验证 DBAC 随机化凭证签名配对。",
+          "evidence": [
+            {
+              "label": "issuer public key W (G2)",
+              "observed": "8ec7bc5478b3bb4266134d4a81ec0aea85c31705d605c950611d9a8620174248ca462ebe6774ffcf5143d037aa6c0c1f1404df757fd5ac67cac354891990adbb8111c6cee29968e88733118c7cdf5509acdda081e8754fbabd0aac68c3862a14"
+            },
+            {
+              "label": "e(Abar,W) = e(Bbar,G2)",
+              "expected": true,
+              "observed": true,
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "holder_signature",
+          "title": "验证 A 私钥签名",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "核验签发方保护的公钥、VC、设备证明和上下文。",
+          "evidence": [
+            {
+              "label": "issuer-protected holder key / signed input digest",
+              "observed": [
+                "y2f-0AqB8KHca7gPpMQurweyedBd1ciNMdhXcOS7NTA",
+                "VgVdrOSzfLH1c9zY-83j-LAYP54iaHCWr5BKX1_g6yg"
+              ],
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "credential_status",
+          "title": "查询签发方凭证状态",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "每阶段查询；撤销、未知或查询失败均拒绝。",
+          "evidence": [
+            {
+              "label": "issuer status / source / checked at",
+              "expected": "valid",
+              "observed": [
+                "valid",
+                "trusted-local-issuer",
+                "2026-10-20T04:08:49.143Z"
+              ],
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "consume",
+          "title": "消费一次性支付挑战",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "全部检查通过后原子消费。",
+          "evidence": [
+            {
+              "label": "before consume: used / now / expires",
+              "expected": [
+                false,
+                "now < expiry"
+              ],
+              "observed": [
+                false,
+                1792469329,
+                1792469388
+              ]
+            },
+            {
+              "label": "after synchronous consume: used",
+              "expected": true,
+              "observed": true,
+              "match": true
+            }
+          ]
+        },
+        {
+          "id": "execution",
+          "title": "执行支付阶段",
+          "actor": "agent-b",
+          "status": "pass",
+          "detail": "返回本阶段实际任务或支付回执。",
+          "evidence": [
+            {
+              "label": "phase / resulting task",
+              "observed": [
+                "proposal",
+                "completed"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "owner_authorization",
+          "title": "验证 Owner 单笔授权",
+          "actor": "agent-b",
+          "status": "skipped",
+          "detail": "验签并核对有效期、订单和绑定公钥。"
+        },
+        {
+          "id": "task_binding",
+          "title": "核对支付任务连续性",
+          "actor": "agent-b",
+          "status": "skipped",
+          "detail": "继续同一授权、订单和公钥的付款任务。"
+        },
+        {
+          "id": "settlement_gate",
+          "title": "签发结算前验证证据",
+          "actor": "agent-b",
+          "status": "skipped",
+          "detail": "签名绑定验证结果、授权及付款载荷。"
+        }
+      ]
+    },
+    "paymentExecuted": false
+  },
+  "verificationTrace": {
+    "profile": "dbac-payment",
+    "source": "agent-b",
+    "outcome": "fail",
+    "steps": [
+      {
+        "id": "extension",
+        "title": "协商设备绑定扩展",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "必须使用设备绑定扩展且不携带具名身份请求头。",
+        "evidence": [
+          {
+            "label": "extension / identified headers",
+            "expected": [
+              "https://example.org/a2a-dbac-bbs-bls/v1",
+              false
+            ],
+            "observed": [
+              "https://example.org/a2a-dbac-bbs-bls/v1",
+              false
+            ]
+          }
+        ]
+      },
+      {
+        "id": "envelope",
+        "title": "读取支付请求与设备绑定证明",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "检查正文长度及规范的设备绑定证明编码。",
+        "evidence": [
+          {
+            "label": "body / proof encoded length",
+            "expected": [
+              "<=49152",
+              "<=16384"
+            ],
+            "observed": [
+              2984,
+              4882
+            ]
+          }
+        ]
+      },
+      {
+        "id": "challenge",
+        "title": "核对一次性挑战",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "挑战必须存在且处于有效期内。",
+        "evidence": [
+          {
+            "label": "challenge found / now / expiry (s)",
+            "expected": [
+              true,
+              "now < expiry"
+            ],
+            "observed": [
+              true,
+              1792469329,
+              1792469389
+            ],
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "replay",
+        "title": "检查挑战未使用",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "拒绝已消费的匿名挑战。",
+        "evidence": [
+          {
+            "label": "challenge already used",
+            "expected": false,
+            "observed": false,
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "request_binding",
+        "title": "核对请求哈希",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "实际正文哈希必须等于挑战绑定值。",
+        "evidence": [
+          {
+            "label": "raw body SHA-256",
+            "expected": "xTjcCiyTxYNIp48ULo6SLzF6wT1OpHMhONFazshDe_w",
+            "observed": "xTjcCiyTxYNIp48ULo6SLzF6wT1OpHMhONFazshDe_w",
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "policy_context",
+        "title": "核对日期与方案",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "检查当前披露策略日期以及展示的方案模式。",
+        "evidence": [
+          {
+            "label": "role / scope / epoch / mode",
+            "expected": [
+              "authorized-agent",
+              "payments:pay",
+              "2026-10-20",
+              "bbs-bls"
+            ],
+            "observed": [
+              "authorized-agent",
+              "payments:pay",
+              "2026-10-20",
+              "bbs-bls"
+            ],
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "title": "核对支付阶段与订单",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "仅允许 payments:pay，并绑定明确阶段、完整订单与收付款条款。",
+        "evidence": [
+          {
+            "label": "method / scope / phase",
+            "expected": [
+              "message/send",
+              "payments:pay",
+              "proposal | authorize | settle"
+            ],
+            "observed": [
+              "message/send",
+              "payments:pay",
+              "proposal"
+            ]
+          },
+          {
+            "label": "payment order ID",
+            "expected": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
+            "observed": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "merchant_order",
+        "title": "核对商家商品订单",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "验证可信商家签名、完整商品快照、订单版本与支付收款目标。",
+        "evidence": [
+          {
+            "label": "trusted merchant / snapshot SHA-256",
+            "expected": "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+            "observed": [
+              "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+              "X4792aPOMriKIwqLJltG-7WGHEOY2Hw37V9JC60nw_g"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "w3c_bbs",
+        "title": "验证 W3C BBS 派生凭证",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "标准库验证可信签发方、披露证明和挑战。",
+        "evidence": [
+          {
+            "label": "proof type / suite / issuer",
+            "expected": [
+              "DataIntegrityProof",
+              "bbs-2023",
+              "did:example:payment-bbs-issuer"
+            ],
+            "observed": [
+              "DataIntegrityProof",
+              "bbs-2023",
+              "did:example:payment-bbs-issuer"
+            ]
+          },
+          {
+            "label": "expected presentationHeader (hex)",
+            "observed": "ad2990102f5ca259c0f58b65b879f93a59a3aa2ba6138a6ab4b20b1e1ab74edf",
+            "note": "Verifier input; checked by bbs-2023."
+          }
+        ]
+      },
+      {
+        "id": "schema",
+        "title": "检查固定属性数量",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "展示属性数量必须符合固定 schema。",
+        "evidence": [
+          {
+            "label": "signed attribute count",
+            "expected": 7,
+            "observed": 7,
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "vc_device_binding",
+        "title": "核对 VC 与 eSIM 绑定",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "核对两份签名保护的同一绑定标识。",
+        "evidence": [
+          {
+            "label": "bindingId / mode / device contribution",
+            "expected": [
+              "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+              "bbs-bls",
+              true
+            ],
+            "observed": [
+              "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+              "bbs-bls",
+              true
+            ]
+          },
+          {
+            "label": "hVC: derived credential hash",
+            "observed": "aIkCKZNhlQf59kDIy_wd4RR87jpBBu3V04g_InOEPHw"
+          }
+        ]
+      },
+      {
+        "id": "proof_structure",
+        "title": "检查展示结构",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "核对版本、套件、模式以及披露属性的结构和索引。",
+        "evidence": [
+          {
+            "label": "version / suite / mode",
+            "expected": [
+              1,
+              "DBAC-BBS-BLS12381-SHA512-v1",
+              "bbs-bls"
+            ],
+            "observed": [
+              1,
+              "DBAC-BBS-BLS12381-SHA512-v1",
+              "bbs-bls"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "disclosure",
+        "title": "验证披露权限",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "逐项检查角色、scope、日期和模式的要求值。",
+        "evidence": [
+          {
+            "label": "required disclosures (index=value)",
+            "expected": [
+              "0=authorized-agent",
+              "1=payments:pay",
+              "2=2026-10-20",
+              "3=bbs-bls",
+              "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+            ],
+            "observed": [
+              "0=authorized-agent",
+              "1=payments:pay",
+              "2=2026-10-20",
+              "3=bbs-bls",
+              "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "proof_encoding",
+        "title": "解析曲线点和标量",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "检查上下文、群元素、证明标量及隐藏属性响应。",
+        "evidence": [
+          {
+            "label": "Abar / Bbar / Cbar (G1)",
+            "observed": [
+              "a34f9bebd3516def63acf91700b9a692e40f9ccfc5d4bb68776de9e2761aae53b41d227a2347bb712808ccd42c5e1bb5",
+              "aca3d7fa4fbea58f7484c7daedd48f2c96c19013f2761c368ce8c46cd044a5493ea76a73f42d8a8ebee8da7297109bab",
+              "86882f467ac2c6c8f3b6df6cfac4828cae8f0b678423375dea13b4af3a99917d34af58f7a8f11754b30a46870599b2db"
+            ]
+          },
+          {
+            "label": "randomized key (G1) / pi_se (G2)",
+            "observed": [
+              "b45d4ce03870e784210b5da785955fe6c9bca9616f032de836be1b2de8edfdd00ded62655c9aae3b801dd3a84e18884f",
+              "a092d82edbfef133354043f0124adb520d5613637bc58a2d82ce0399e03d5ab65d0e7d571f8d77de8bb72b401ed7a7791473d41465dcd7bf4d4bcc939c07bed66bb51a6d5bf3a549caa2399d052008f47da73e51dca436910509e995497cb724"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "device_pairing",
+        "title": "验证设备贡献",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "执行适配设备签名的配对等式检查并绑定本次上下文。",
+        "evidence": [
+          {
+            "label": "hash-to-curve point Q (G2)",
+            "observed": "b2fff7574df94aa8de618fd1be1bd6680ed62f65f59a1a12add417ab7bb0030671547a4db38d63f75d9f5dc7d695e5df086bc60659021ca174d03391b5df68df8d7d7af6e7d232ccfd8eb368664cfeaa464a7822770f1e1858cd10393a0e2941"
+          },
+          {
+            "label": "e(H0,pi_se) = e(randomizedKey,Q)",
+            "expected": true,
+            "observed": true,
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "knowledge",
+        "title": "验证知识证明",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "重建线性关系承诺并核对绑定上下文的 Fiat–Shamir 挑战。",
+        "evidence": [
+          {
+            "label": "Fiat-Shamir challenge",
+            "expected": "28aa644441c76a8141436c6488fd682446ea66ed272123574b2b4c80259150bf",
+            "observed": "28aa644441c76a8141436c6488fd682446ea66ed272123574b2b4c80259150bf",
+            "match": true
+          },
+          {
+            "label": "reconstructed T1 / T2 (G1)",
+            "observed": [
+              "831b1eb11bb692bc679f9afbe0525dd6e223a3b443fe39842546ca0decfd91bc00d4cffafac6ca7894d1766baddf9360",
+              "a6bfc2fcc705f5a754477f897887fc4f158aa6f53040bc9e96ae3c1e94e16e4b57e425809faa61d9fb8b2c268c0d688f"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "credential_pairing",
+        "title": "验证配套凭证配对",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "验证 DBAC 随机化凭证签名配对。",
+        "evidence": [
+          {
+            "label": "issuer public key W (G2)",
+            "observed": "8ec7bc5478b3bb4266134d4a81ec0aea85c31705d605c950611d9a8620174248ca462ebe6774ffcf5143d037aa6c0c1f1404df757fd5ac67cac354891990adbb8111c6cee29968e88733118c7cdf5509acdda081e8754fbabd0aac68c3862a14"
+          },
+          {
+            "label": "e(Abar,W) = e(Bbar,G2)",
+            "expected": true,
+            "observed": true,
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "holder_signature",
+        "title": "验证 A 私钥签名",
+        "actor": "agent-b",
+        "status": "pass",
+        "detail": "核验签发方保护的公钥、VC、设备证明和上下文。",
+        "evidence": [
+          {
+            "label": "issuer-protected holder key / signed input digest",
+            "observed": [
+              "y2f-0AqB8KHca7gPpMQurweyedBd1ciNMdhXcOS7NTA",
+              "yDE0SdV-18k7J2q6XEIwKgd-T8XEe4TcoZy0D5ksPk0"
+            ],
+            "match": true
+          }
+        ]
+      },
+      {
+        "id": "credential_status",
+        "title": "查询签发方凭证状态",
+        "actor": "agent-b",
+        "status": "fail",
+        "detail": "每阶段查询；撤销、未知或查询失败均拒绝。 检查终止（W3C_CREDENTIAL_REVOKED）。",
+        "evidence": [
+          {
+            "label": "issuer status / source / checked at",
+            "expected": "valid",
+            "observed": [
+              "revoked",
+              "trusted-local-issuer",
+              "2026-10-20T04:08:50.000Z"
+            ],
+            "match": false
+          }
+        ],
+        "code": "W3C_CREDENTIAL_REVOKED"
+      },
+      {
+        "id": "owner_authorization",
+        "title": "验证 Owner 单笔授权",
+        "actor": "agent-b",
+        "status": "skipped",
+        "detail": "验签并核对有效期、订单和绑定公钥。"
+      },
+      {
+        "id": "task_binding",
+        "title": "核对支付任务连续性",
+        "actor": "agent-b",
+        "status": "skipped",
+        "detail": "继续同一授权、订单和公钥的付款任务。"
+      },
+      {
+        "id": "consume",
+        "title": "消费一次性支付挑战",
+        "actor": "agent-b",
+        "status": "skipped",
+        "detail": "全部检查通过后原子消费。"
+      },
+      {
+        "id": "settlement_gate",
+        "title": "签发结算前验证证据",
+        "actor": "agent-b",
+        "status": "skipped",
+        "detail": "签名绑定验证结果、授权及付款载荷。"
+      },
+      {
+        "id": "execution",
+        "title": "执行支付阶段",
+        "actor": "agent-b",
+        "status": "skipped",
+        "detail": "返回本阶段实际任务或支付回执。"
+      }
+    ]
+  },
+  "sideEffects": {
+    "before": {
+      "executionCount": 1,
+      "accounts": [
+        {
+          "id": "demo:alice",
+          "balanceMinor": 965020000
+        },
+        {
+          "id": "merchant:keyboard",
+          "balanceMinor": 34980000
+        },
+        {
+          "id": "merchant:other",
+          "balanceMinor": 0
+        }
+      ]
+    },
+    "after": {
+      "executionCount": 1,
+      "accounts": [
+        {
+          "id": "demo:alice",
+          "balanceMinor": 965020000
+        },
+        {
+          "id": "merchant:keyboard",
+          "balanceMinor": 34980000
+        },
+        {
+          "id": "merchant:other",
+          "balanceMinor": 0
+        }
+      ]
+    },
+    "paymentExecutionDelta": 0,
+    "balancesUnchanged": true,
+    "ownerApprovalRequested": false,
+    "walletSignatureRequested": false
+  },
+  "revocation": {
+    "credential": "experiment-only",
+    "freshChallenge": true,
+    "completeHolderProof": true,
+    "completeDeviceProof": true
+  }
+}

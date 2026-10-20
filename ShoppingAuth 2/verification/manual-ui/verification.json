@@ -1,0 +1,462 @@
+{
+  "startedAt": "2026-10-20T03:47:03.058Z",
+  "realCryptoAndChain": true,
+  "localTestOnly": true,
+  "checks": [
+    {
+      "name": "Complete nine-product Chinese official storefront and six-role hub scene are present",
+      "passed": true
+    },
+    {
+      "name": "Checkout stops before credential, device, proof and Owner; four seconds of inactivity makes no mutation",
+      "passed": true
+    },
+    {
+      "name": "Real challenge expiry stays stopped; explicit fresh challenge does not call the device and stale attempts are rejected",
+      "passed": true,
+      "waitedMs": 59363
+    },
+    {
+      "name": "Every credential/challenge/derived-VC/device/proof/verification/submission step needs its own click; payment opens only after qualification",
+      "passed": true
+    },
+    {
+      "name": "Shopper approval queues payment only; approval does not synchronize, prove, sign or transfer automatically",
+      "passed": true
+    },
+    {
+      "name": "Authorization, wallet signing and settlement are individual operations; only final settle verify transfers once and preserves the original order",
+      "passed": true
+    },
+    {
+      "name": "Explicit merchant confirmation completes the purchase, all three actual proof traces pass, and querying cannot pay again",
+      "passed": true,
+      "transactionHash": "0x8c465af4da738f7333b473d7c288aef003f0ee63a2b0911aa7b2746a38e71df4",
+      "executionCount": 1
+    },
+    {
+      "name": "Both layouts remain operable without horizontal overflow, external requests or browser errors",
+      "passed": true
+    }
+  ],
+  "manualClicks": [
+    {
+      "action": "issue",
+      "phase": null,
+      "stage": "IDLE",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 1,
+      "executionDelta": 0
+    },
+    {
+      "action": "begin-proposal",
+      "phase": "proposal",
+      "stage": "CHALLENGE_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "begin-proposal",
+      "phase": "proposal",
+      "stage": "CHALLENGE_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "derive-vc",
+      "phase": "proposal",
+      "stage": "VC_DERIVED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "device-sign",
+      "phase": "proposal",
+      "stage": "DEVICE_SIGNED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 1,
+      "executionDelta": 0
+    },
+    {
+      "action": "prove",
+      "phase": "proposal",
+      "stage": "PROOF_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "verify",
+      "phase": "proposal",
+      "stage": "VERIFIED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "submit-owner",
+      "phase": "proposal",
+      "stage": "OWNER_SUBMITTED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "sync-owner",
+      "phase": "proposal",
+      "stage": "OWNER_SUBMITTED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "begin-authorize",
+      "phase": "authorize",
+      "stage": "CHALLENGE_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "derive-vc",
+      "phase": "authorize",
+      "stage": "VC_DERIVED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "device-sign",
+      "phase": "authorize",
+      "stage": "DEVICE_SIGNED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 1,
+      "executionDelta": 0
+    },
+    {
+      "action": "prove",
+      "phase": "authorize",
+      "stage": "PROOF_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "verify",
+      "phase": "authorize",
+      "stage": "VERIFIED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "wallet-sign",
+      "phase": "authorize",
+      "stage": "WALLET_SIGNED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "begin-settle",
+      "phase": "settle",
+      "stage": "CHALLENGE_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "derive-vc",
+      "phase": "settle",
+      "stage": "VC_DERIVED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "device-sign",
+      "phase": "settle",
+      "stage": "DEVICE_SIGNED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 1,
+      "executionDelta": 0
+    },
+    {
+      "action": "prove",
+      "phase": "settle",
+      "stage": "PROOF_READY",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    },
+    {
+      "action": "verify",
+      "phase": "settle",
+      "stage": "SETTLED",
+      "coreOperationsStarted": 1,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 1
+    },
+    {
+      "action": "confirm-merchant",
+      "phase": "settle",
+      "stage": "SETTLED",
+      "coreOperationsStarted": 0,
+      "deviceSignatureDelta": 0,
+      "executionDelta": 0
+    }
+  ],
+  "idleChecks": [
+    {
+      "name": "checkout creates only the signed order",
+      "milliseconds": 4000,
+      "phase": "verifying",
+      "stage": "IDLE",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after issue/none",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "IDLE",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after begin-proposal/proposal",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "CHALLENGE_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after begin-proposal/proposal",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "CHALLENGE_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after derive-vc/proposal",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "VC_DERIVED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after device-sign/proposal",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "DEVICE_SIGNED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after prove/proposal",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "PROOF_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after verify/proposal",
+      "milliseconds": 1100,
+      "phase": "verifying",
+      "stage": "VERIFIED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after submit-owner/proposal",
+      "milliseconds": 1100,
+      "phase": "checkout",
+      "stage": "OWNER_SUBMITTED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "Owner proposal waits for the shopper",
+      "milliseconds": 2500,
+      "phase": "checkout",
+      "stage": "OWNER_SUBMITTED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "Shopper approval does not start payment verification",
+      "milliseconds": 2500,
+      "phase": "paying",
+      "stage": "OWNER_SUBMITTED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after sync-owner/proposal",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "OWNER_SUBMITTED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after begin-authorize/authorize",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "CHALLENGE_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after derive-vc/authorize",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "VC_DERIVED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after device-sign/authorize",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "DEVICE_SIGNED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after prove/authorize",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "PROOF_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after verify/authorize",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "VERIFIED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after wallet-sign/authorize",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "WALLET_SIGNED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "Signed wallet payload waits for a separate settlement challenge",
+      "milliseconds": 2000,
+      "phase": "paying",
+      "stage": "WALLET_SIGNED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after begin-settle/settle",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "CHALLENGE_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after derive-vc/settle",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "VC_DERIVED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after device-sign/settle",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "DEVICE_SIGNED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after prove/settle",
+      "milliseconds": 1100,
+      "phase": "paying",
+      "stage": "PROOF_READY",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after verify/settle",
+      "milliseconds": 1100,
+      "phase": "confirming",
+      "stage": "SETTLED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "Real receipt still waits for explicit merchant confirmation",
+      "milliseconds": 2500,
+      "phase": "confirming",
+      "stage": "SETTLED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    },
+    {
+      "name": "after confirm-merchant/settle",
+      "milliseconds": 1100,
+      "phase": "paid",
+      "stage": "SETTLED",
+      "noAdditionalPosts": true,
+      "noAdditionalSignatures": true,
+      "noTransfer": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "failedResources": [],
+  "screenshots": [
+    "01-complete-official-store.png",
+    "02-await-manual-qualification.png",
+    "03-qualification-before-owner-submission.png",
+    "04-shopper-approved-await-console.png",
+    "05-wallet-signed-no-transfer.png",
+    "06-settled-await-merchant.png",
+    "07-manual-payment-complete.png"
+  ],
+  "status": "passed",
+  "finishedAt": "2026-10-20T03:49:12.645Z"
+}

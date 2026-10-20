@@ -1,5 +1,0 @@
-
-> a2a-jcardsim-x402@0.5.0 styles:check
-> node scripts/sync-platform-styles.mjs --check
-
-Shared platform styles are identical.

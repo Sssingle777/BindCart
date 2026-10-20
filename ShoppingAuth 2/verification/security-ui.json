@@ -1,0 +1,105 @@
+{
+  "realBrowser": true,
+  "checks": [
+    {
+      "scenario": "copied-vc",
+      "passed": true,
+      "completion": "completed",
+      "actual": "W3C_DEVICE_PROOF_REQUIRED",
+      "rejectionStage": "vc_device_binding",
+      "controlAccepted": true,
+      "requestRejected": true,
+      "sideEffects": {
+        "before": {
+          "executionCount": 1,
+          "accounts": [
+            {
+              "id": "demo:alice",
+              "balanceMinor": 965020000
+            },
+            {
+              "id": "merchant:keyboard",
+              "balanceMinor": 34980000
+            },
+            {
+              "id": "merchant:other",
+              "balanceMinor": 0
+            }
+          ]
+        },
+        "after": {
+          "executionCount": 1,
+          "accounts": [
+            {
+              "id": "demo:alice",
+              "balanceMinor": 965020000
+            },
+            {
+              "id": "merchant:keyboard",
+              "balanceMinor": 34980000
+            },
+            {
+              "id": "merchant:other",
+              "balanceMinor": 0
+            }
+          ]
+        },
+        "paymentExecutionDelta": 0,
+        "balancesUnchanged": true,
+        "ownerApprovalRequested": false,
+        "walletSignatureRequested": false
+      }
+    },
+    {
+      "scenario": "revoked",
+      "passed": true,
+      "completion": "completed",
+      "actual": "W3C_CREDENTIAL_REVOKED",
+      "rejectionStage": "credential_status",
+      "controlAccepted": true,
+      "requestRejected": true,
+      "sideEffects": {
+        "before": {
+          "executionCount": 1,
+          "accounts": [
+            {
+              "id": "demo:alice",
+              "balanceMinor": 965020000
+            },
+            {
+              "id": "merchant:keyboard",
+              "balanceMinor": 34980000
+            },
+            {
+              "id": "merchant:other",
+              "balanceMinor": 0
+            }
+          ]
+        },
+        "after": {
+          "executionCount": 1,
+          "accounts": [
+            {
+              "id": "demo:alice",
+              "balanceMinor": 965020000
+            },
+            {
+              "id": "merchant:keyboard",
+              "balanceMinor": 34980000
+            },
+            {
+              "id": "merchant:other",
+              "balanceMinor": 0
+            }
+          ]
+        },
+        "paymentExecutionDelta": 0,
+        "balancesUnchanged": true,
+        "ownerApprovalRequested": false,
+        "walletSignatureRequested": false
+      }
+    }
+  ],
+  "errors": [],
+  "status": "passed"
+}
