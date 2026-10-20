@@ -1,0 +1,91 @@
+/* Shared geometry and interaction contract for every platform content page. */
+:root{font-family:var(--ui-font);color:var(--ui-text);background:var(--ui-bg);font-synthesis:none}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;color:var(--ui-text);background:var(--ui-bg);font-family:var(--ui-font);font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}button,input,select,textarea{font:inherit}button,a,summary{touch-action:manipulation}:focus-visible{outline:3px solid var(--ui-focus);outline-offset:3px}button{cursor:pointer}button:disabled{cursor:not-allowed}button,input,select{min-height:40px}input,select{max-width:100%;border-radius:var(--ui-radius-s);border:1px solid var(--ui-line-strong);background:var(--ui-panel);color:var(--ui-text);padding:8px 10px}a{color:var(--ui-accent);text-underline-offset:4px}h1,h2,h3,p{overflow-wrap:break-word}pre,code,dd{overflow-wrap:anywhere}pre{max-width:100%;overflow:auto;font-family:var(--ui-mono)}dialog{max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);overflow:auto;border-radius:var(--ui-radius-m);border:1px solid var(--ui-line);box-shadow:var(--ui-shadow-l)}dialog::backdrop{background:var(--ui-backdrop)}summary{cursor:pointer}
+/* Opt-in workspace components. The guide deliberately does not opt in. */
+.platform-workspace {
+  font-size:var(--ui-body-size);
+  --page-gap:var(--ui-gap);
+}
+.platform-workspace :is(.workspace-page,.page-shell,.shell) {
+  width:100%; max-width:var(--ui-canvas-width); margin:0 auto; padding:var(--ui-page-padding);
+}
+.platform-workspace :is(.module-heading,.ui-context-bar) {
+  display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;
+  gap:8px 18px; margin:0 0 var(--ui-gap); padding:0;
+}
+.platform-workspace :is(.module-heading,.workspace-heading) h1 {
+  font-size:var(--ui-title-size); line-height:1.6; font-weight:550; letter-spacing:normal; margin:0;
+}
+.platform-workspace :is(.module-description,#workspace-intro) {
+  margin:4px 0 0; color:var(--ui-muted); font-size:var(--ui-body-size); line-height:1.7;
+}
+.platform-workspace :is(.module-badge,.ui-status,.status-tag,.status-pill) {
+  display:inline-flex; align-items:center; gap:6px; max-width:100%; padding:3px 8px;
+  border:1px solid var(--ui-neutral-line); border-radius:var(--ui-radius-s);
+  color:var(--ui-muted); background:var(--ui-neutral-soft); font-size:var(--ui-caption-size); line-height:1.6;
+  font-weight:500; white-space:normal; overflow-wrap:anywhere;
+}
+.platform-workspace :is(.status-tag,.status-pill,.ui-status):is(.success,.approved,.valid,.pass) {
+  color:var(--ui-pass); background:var(--ui-pass-soft); border-color:var(--ui-pass-line);
+}
+.platform-workspace :is(.status-tag,.status-pill,.ui-status):is(.error,.rejected,.revoked,.locked,.fail) {
+  color:var(--ui-danger); background:var(--ui-danger-soft); border-color:var(--ui-danger-line);
+}
+.platform-workspace :is(.status-tag,.status-pill,.ui-status):is(.pending,.expired,.unknown,.warn) {
+  color:var(--ui-warn); background:var(--ui-warn-soft); border-color:var(--ui-warn-line);
+}
+.platform-workspace :is(.ui-card,.panel,.workspace-card,.identity-card,.proposal) {
+  min-width:0; background:var(--ui-panel); border:1px solid var(--ui-line);
+  border-radius:var(--ui-radius-m); padding:var(--ui-card-padding); box-shadow:var(--ui-shadow-s);
+}
+.platform-workspace :is(.section-heading,.card-heading) { display:flex; align-items:center; justify-content:space-between; gap:12px; margin:0 0 var(--ui-gap); }
+.platform-workspace :is(.section-heading,.card-heading) h2 { margin:0; font-size:var(--ui-card-title-size); line-height:1.5; font-weight:600; letter-spacing:normal; }
+.platform-workspace .identity-card>h2 { margin:0 0 var(--ui-gap); font-size:var(--ui-card-title-size); line-height:1.5; font-weight:600; }
+.platform-workspace :is(.ui-button,.button,.primary-button,.send-button,.refresh-button,.danger-button,.workspace-actions button,.device-controls button,.verification-data-controls button) {
+  display:inline-flex; align-items:center; justify-content:center; gap:6px;
+  min-height:var(--ui-control-height); max-width:100%; padding:8px 14px;
+  border:1px solid var(--ui-line-strong); border-radius:var(--ui-radius-s);
+  background:var(--ui-panel); color:var(--ui-text); font:inherit; font-size:var(--ui-body-size); line-height:1.5;
+}
+.platform-workspace :is(.ui-button.primary,.button.primary,.primary-button,.send-button) { color:var(--ui-on-accent); background:var(--ui-accent); border-color:var(--ui-accent); }
+.platform-workspace :is(.ui-button.danger,.button.danger,.danger-button) { color:var(--ui-danger); border-color:var(--ui-danger-line); background:var(--ui-danger-soft); }
+.platform-workspace :is(.text-button,.icon-button) { min-height:34px; padding:4px 8px; border:1px solid var(--ui-line); border-radius:var(--ui-radius-s); background:var(--ui-panel); color:var(--ui-accent); font-size:var(--ui-body-size); }
+.platform-workspace button:hover:enabled { filter:brightness(.98); }
+.platform-workspace button:disabled { opacity:.5; cursor:not-allowed; }
+.platform-workspace :is(input,select,textarea) { font-size:var(--ui-body-size); line-height:1.5; min-height:var(--ui-control-height); padding:8px 10px; border:1px solid var(--ui-line-strong); border-radius:var(--ui-radius-s); background:var(--ui-panel); color:var(--ui-text); }
+.platform-workspace :is(input[type=checkbox],input[type=radio]) { min-height:0; }
+.platform-workspace :is(.feedback,.ui-result,.verification-summary) { padding:13px 15px; border:1px solid var(--ui-neutral-line); border-radius:var(--ui-radius-s); background:var(--ui-panel-soft); color:var(--ui-muted); font-size:var(--ui-body-size); }
+.platform-workspace .feedback { display:flex; flex-direction:column; gap:4px; margin-top:var(--ui-gap); }
+.platform-workspace :is(.feedback.success,.ui-result.pass) { border-color:var(--ui-pass-line); color:var(--ui-pass); background:var(--ui-pass-soft); }
+.platform-workspace :is(.feedback.error,.ui-result.fail) { border-color:var(--ui-danger-line); color:var(--ui-danger); background:var(--ui-danger-soft); }
+.platform-workspace :is(.feedback.warning,.ui-result.pending) { border-color:var(--ui-warn-line); color:var(--ui-warn); background:var(--ui-warn-soft); }
+.platform-workspace :is(.ui-empty,.empty-state) { padding:24px var(--ui-card-padding); border:1px solid var(--ui-line); border-radius:var(--ui-radius-m); background:var(--ui-panel-soft); color:var(--ui-muted); font-size:var(--ui-body-size); }
+.platform-workspace :is(.facts,.ui-fields) { margin:var(--ui-gap) 0; }
+.platform-workspace :is(.facts,.ui-fields)>div { display:grid; grid-template-columns:130px minmax(0,1fr); gap:10px; padding:8px 0; border-bottom:1px solid var(--ui-line); font-size:var(--ui-body-size); }
+.platform-workspace :is(.facts,.ui-fields) dt { color:var(--ui-muted); }
+.platform-workspace :is(.facts,.ui-fields) dd { min-width:0; margin:0; overflow-wrap:anywhere; }
+.platform-workspace :is(.ui-evidence,details) { min-width:0; margin-top:var(--ui-gap); padding-top:10px; border-top:1px solid var(--ui-line); }
+.platform-workspace summary { font-size:var(--ui-body-size); line-height:1.7; color:var(--ui-accent); overflow-wrap:anywhere; }
+.platform-workspace :is(pre,.json-panel) { font:12px/1.75 var(--ui-mono); padding:14px; background:var(--ui-code); color:var(--ui-text); border:1px solid var(--ui-line); border-radius:var(--ui-radius-s); max-height:420px; white-space:pre-wrap; overflow:auto; }
+.platform-workspace :is(.hint,.boundary-note,.quiet-caption,.subtle,.section-description) { color:var(--ui-muted); font-size:var(--ui-caption-size); line-height:1.7; }
+.platform-workspace .boundary-note { padding:12px 14px; margin:var(--ui-gap) 0; border:1px solid var(--ui-line); border-radius:var(--ui-radius-s); background:var(--ui-panel-soft); }
+.platform-workspace .platform-context { display:flex; flex-wrap:wrap; gap:8px 18px; margin:0 0 var(--ui-gap); padding:0 0 12px; border-bottom:1px solid var(--ui-line); color:var(--ui-muted); font-size:var(--ui-caption-size); }
+.platform-workspace .platform-context a { font-weight:550; text-decoration:none; }
+.platform-workspace .platform-context a:hover { text-decoration:underline; }
+.platform-workspace .topbar { min-height:54px; margin-bottom:var(--ui-gap); }
+.platform-workspace .connection { font-size:var(--ui-caption-size); }
+/* Reuse the existing trace renderer, keeping pass/fail/skipped text and evidence. */
+.platform-workspace .verification-view { padding:var(--ui-card-padding); border-radius:var(--ui-radius-m); }
+.platform-workspace .verification-step-title strong { font-size:var(--ui-body-size); }
+.platform-workspace :is(.verification-step-status,.verification-actor,.verification-evidence summary,.verification-detail,.verification-caption,.verification-principle>p) { font-size:var(--ui-caption-size); }
+.platform-workspace :is(.verification-evidence-table,.verification-code,.verification-formula) { font-size:12px; }
+.platform-workspace dialog { padding:var(--ui-card-padding); background:var(--ui-panel); color:var(--ui-text); }
+@media(max-width:620px) {
+  .platform-workspace :is(.module-heading,.ui-context-bar) { align-items:flex-start; }
+  .platform-workspace :is(.facts,.ui-fields)>div { grid-template-columns:100px minmax(0,1fr); }
+  .platform-workspace :is(.section-heading,.card-heading) { flex-wrap:wrap; }
+}
+/* Preserve the guide's existing narrow-screen controls, including its dialogs.
+   Opt-in workspace controls above have their own explicit component density. */
+@media(max-width:680px){button,input,select{min-height:42px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

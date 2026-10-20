@@ -1,0 +1,470 @@
+{
+  "source": "https://www.mystoredemo.io/",
+  "sourceSha256": "a375d3eacfa8e9744936e1ac946f605583db411db17077efe2cdaea5671b9eda",
+  "outputSha256": "71683b6406e0bf6c6003720ee773836c16b1dd730032d74ce7382158bdd983f6",
+  "upstreamStylesModified": false,
+  "translations": [
+    {
+      "from": "My Store",
+      "to": "MyStore 商城",
+      "occurrences": 1
+    },
+    {
+      "from": "Shopping cart",
+      "to": "购物车",
+      "occurrences": 1
+    },
+    {
+      "from": "Recommendations",
+      "to": "猜你喜欢",
+      "occurrences": 1
+    },
+    {
+      "from": "Product added to your cart",
+      "to": "商品已加入购物车",
+      "occurrences": 1
+    },
+    {
+      "from": "Add to cart",
+      "to": "加入购物车",
+      "occurrences": 1
+    },
+    {
+      "from": "Or",
+      "to": "或",
+      "occurrences": 1
+    },
+    {
+      "from": "Buy instantly",
+      "to": "立即购买",
+      "occurrences": 1
+    },
+    {
+      "from": "Remove product",
+      "to": "删除商品",
+      "occurrences": 1
+    },
+    {
+      "from": "Trash bin",
+      "to": "删除",
+      "occurrences": 1
+    },
+    {
+      "from": "Cart",
+      "to": "购物车",
+      "occurrences": 2
+    },
+    {
+      "from": "Total:",
+      "to": "合计：",
+      "occurrences": 2
+    },
+    {
+      "from": "Continue to Checkout",
+      "to": "前往结算",
+      "occurrences": 1
+    },
+    {
+      "from": "Your cart is empty.",
+      "to": "购物车是空的。",
+      "occurrences": 1
+    },
+    {
+      "from": "Return Home",
+      "to": "返回首页",
+      "occurrences": 3
+    },
+    {
+      "from": "Checkout",
+      "to": "结算",
+      "occurrences": 2
+    },
+    {
+      "from": "Select your payment method",
+      "to": "选择付款方式",
+      "occurrences": 1
+    },
+    {
+      "from": "Shopper Email",
+      "to": "买家邮箱",
+      "occurrences": 1
+    },
+    {
+      "from": "Order summary",
+      "to": "订单详情",
+      "occurrences": 1
+    },
+    {
+      "from": "Your order has been successfully placed.",
+      "to": "订单已成功提交。",
+      "occurrences": 2
+    },
+    {
+      "from": "Oops! Something went wrong. Please try again.",
+      "to": "操作未成功，请重试。",
+      "occurrences": 1
+    },
+    {
+      "from": "Success icon",
+      "to": "成功",
+      "occurrences": 2
+    },
+    {
+      "from": "Thank you",
+      "to": "谢谢惠顾",
+      "occurrences": 2
+    },
+    {
+      "from": "Error icon",
+      "to": "错误",
+      "occurrences": 1
+    },
+    {
+      "from": "Product Detail",
+      "to": "商品详情",
+      "occurrences": 1
+    },
+    {
+      "from": "I want to have ",
+      "to": "我希望使用 ",
+      "occurrences": 1
+    },
+    {
+      "from": " as a payment method option",
+      "to": " 付款",
+      "occurrences": 1
+    },
+    {
+      "from": "Your Click to Pay email address",
+      "to": "Click to Pay 邮箱地址",
+      "occurrences": 1
+    },
+    {
+      "from": "Invalid email address.",
+      "to": "邮箱地址无效。",
+      "occurrences": 1
+    },
+    {
+      "from": "Flag icon",
+      "to": "国旗",
+      "occurrences": 1
+    },
+    {
+      "from": "Dropdown caret",
+      "to": "展开",
+      "occurrences": 1
+    },
+    {
+      "from": "rating star",
+      "to": "评分",
+      "occurrences": 1
+    },
+    {
+      "from": "Australia",
+      "to": "澳大利亚",
+      "occurrences": 1
+    },
+    {
+      "from": "Austria",
+      "to": "奥地利",
+      "occurrences": 1
+    },
+    {
+      "from": "Belgium",
+      "to": "比利时",
+      "occurrences": 1
+    },
+    {
+      "from": "Brazil",
+      "to": "巴西",
+      "occurrences": 1
+    },
+    {
+      "from": "Canada",
+      "to": "加拿大",
+      "occurrences": 1
+    },
+    {
+      "from": "China",
+      "to": "中国",
+      "occurrences": 1
+    },
+    {
+      "from": "Czech Republic",
+      "to": "捷克",
+      "occurrences": 1
+    },
+    {
+      "from": "Denmark",
+      "to": "丹麦",
+      "occurrences": 1
+    },
+    {
+      "from": "Finland",
+      "to": "芬兰",
+      "occurrences": 1
+    },
+    {
+      "from": "France",
+      "to": "法国",
+      "occurrences": 1
+    },
+    {
+      "from": "Greece",
+      "to": "希腊",
+      "occurrences": 1
+    },
+    {
+      "from": "Germany",
+      "to": "德国",
+      "occurrences": 1
+    },
+    {
+      "from": "Hong Kong",
+      "to": "中国香港",
+      "occurrences": 1
+    },
+    {
+      "from": "India",
+      "to": "印度",
+      "occurrences": 1
+    },
+    {
+      "from": "Indonesia",
+      "to": "印度尼西亚",
+      "occurrences": 1
+    },
+    {
+      "from": "Italy",
+      "to": "意大利",
+      "occurrences": 1
+    },
+    {
+      "from": "Japan",
+      "to": "日本",
+      "occurrences": 1
+    },
+    {
+      "from": "Kenya",
+      "to": "肯尼亚",
+      "occurrences": 1
+    },
+    {
+      "from": "Malaysia",
+      "to": "马来西亚",
+      "occurrences": 1
+    },
+    {
+      "from": "Mexico",
+      "to": "墨西哥",
+      "occurrences": 1
+    },
+    {
+      "from": "Netherlands",
+      "to": "荷兰",
+      "occurrences": 1
+    },
+    {
+      "from": "Norway",
+      "to": "挪威",
+      "occurrences": 1
+    },
+    {
+      "from": "New Zealand",
+      "to": "新西兰",
+      "occurrences": 1
+    },
+    {
+      "from": "Philippines",
+      "to": "菲律宾",
+      "occurrences": 1
+    },
+    {
+      "from": "Poland",
+      "to": "波兰",
+      "occurrences": 1
+    },
+    {
+      "from": "Portugal",
+      "to": "葡萄牙",
+      "occurrences": 1
+    },
+    {
+      "from": "Russia",
+      "to": "俄罗斯",
+      "occurrences": 1
+    },
+    {
+      "from": "Singapore",
+      "to": "新加坡",
+      "occurrences": 1
+    },
+    {
+      "from": "South Korea",
+      "to": "韩国",
+      "occurrences": 1
+    },
+    {
+      "from": "Spain",
+      "to": "西班牙",
+      "occurrences": 1
+    },
+    {
+      "from": "Sweden",
+      "to": "瑞典",
+      "occurrences": 1
+    },
+    {
+      "from": "Switzerland",
+      "to": "瑞士",
+      "occurrences": 1
+    },
+    {
+      "from": "Thailand",
+      "to": "泰国",
+      "occurrences": 1
+    },
+    {
+      "from": "United Arab Emirates",
+      "to": "阿联酋",
+      "occurrences": 1
+    },
+    {
+      "from": "United Kingdom",
+      "to": "英国",
+      "occurrences": 1
+    },
+    {
+      "from": "United States",
+      "to": "美国",
+      "occurrences": 1
+    },
+    {
+      "from": "Vietnam",
+      "to": "越南",
+      "occurrences": 1
+    },
+    {
+      "from": "Polo shirt",
+      "to": "Polo 衫",
+      "occurrences": 1
+    },
+    {
+      "from": "A classic polo shirt for all occasions. Playing golf? Pair it with some khakis. Preppy party? Pop that collar! Let your polo reflect your personality, so your brain doesn’t have to.",
+      "to": "适合各种场合的经典 Polo 衫。打高尔夫时搭配卡其裤，聚会时竖起衣领，让 Polo 衫展现你的个性。",
+      "occurrences": 1
+    },
+    {
+      "from": "Headphones",
+      "to": "耳机",
+      "occurrences": 1
+    },
+    {
+      "from": "Audio perfection, award-winning noise cancellation, and a design as sleek as a sports car. Don’t be fooled by the price, these are the best headphones on the market—guaranteed! ",
+      "to": "出色音质、获奖降噪技术与流线型设计。别被价格迷惑，这是一款出色的耳机。",
+      "occurrences": 1
+    },
+    {
+      "from": "Sunglasses",
+      "to": "太阳镜",
+      "occurrences": 1
+    },
+    {
+      "from": "Surf, sand, and sunglasses: summertime perfection. These aviator sunnies protect your precious peepers from hazardous UV rays, day or night. Bonus: they make you look kinda cool.",
+      "to": "冲浪、沙滩与太阳镜，夏日的理想搭配。这款飞行员太阳镜可以保护双眼免受紫外线伤害，也让你看起来更酷。",
+      "occurrences": 1
+    },
+    {
+      "from": "Boots",
+      "to": "短靴",
+      "occurrences": 1
+    },
+    {
+      "from": "These boots fall above the ankle, so you don’t need to buy those no-show half socks that constantly fall off your heels. We think these boots are waterproof, but please let us know.",
+      "to": "高于脚踝的短靴，让你不必再穿总会从脚跟滑落的隐形袜。我们认为它防水，欢迎告诉我们你的使用体验。",
+      "occurrences": 1
+    },
+    {
+      "from": "Event ticket",
+      "to": "活动门票",
+      "occurrences": 1
+    },
+    {
+      "from": "A generic ticket to an unspecified event on either May 10 or October 5 (depending on which side of the pond you hail from). One seat only, one night only. No refunds, no regrets.",
+      "to": "一张活动门票，日期是 5 月 10 日或 10 月 5 日，取决于你习惯的日期写法。一个座位，仅此一晚，不予退款。",
+      "occurrences": 1
+    },
+    {
+      "from": "Backpack",
+      "to": "双肩背包",
+      "occurrences": 1
+    },
+    {
+      "from": "Also called a backsack, knapsack, rucksack, or packsack, this is the preferred load-carrying method of hikers and students. We think these ones are waterproof, but please let us know.",
+      "to": "无论叫背包还是行囊，它都是徒步者和学生喜爱的携物方式。我们认为它防水，欢迎告诉我们你的使用体验。",
+      "occurrences": 1
+    },
+    {
+      "from": "Joypad",
+      "to": "游戏手柄",
+      "occurrences": 1
+    },
+    {
+      "from": "Maybe you need this device for your existing gaming console. Maybe you just want to pretend you’ve got a gaming console. We’re not here to judge! Buy, and you shall receive joy.",
+      "to": "你可能需要它来搭配现有游戏机，也可能只是想假装自己有一台游戏机。买下它，收获快乐。",
+      "occurrences": 1
+    },
+    {
+      "from": "Food delivery",
+      "to": "外卖餐盒",
+      "occurrences": 1
+    },
+    {
+      "from": "Just like your school cafeteria’s menu in the last few days before summer break, this “manager’s special” mealbox is a mystery. On the plus side, we’ll deliver it right to your doorstep.",
+      "to": "就像暑假前学校食堂的菜单，这份特价餐盒的内容充满惊喜。好消息是，我们会把它送到你的门口。",
+      "occurrences": 1
+    },
+    {
+      "from": "Handbag",
+      "to": "手提包",
+      "occurrences": 1
+    },
+    {
+      "from": "The dorsal fin of an orca whale. An actual oil slick. The earthly manifestation of a black hole. Nighttime with pockets. Vantablack lining. The world’s most elusive handbag.",
+      "to": "如虎鲸的背鳍、如油面、如黑洞，也像带口袋的夜色。这是一款神秘的深黑色手提包。",
+      "occurrences": 1
+    }
+  ],
+  "patches": [
+    {
+      "name": "controller-hook",
+      "from": "const qr=zr;window.version=",
+      "to": "const qr=zr;window.MyStoreLocal.mount({store:qr,catalog:b,payment:or,localisation:Ar});window.version="
+    },
+    {
+      "name": "local-country-flags",
+      "from": "\"https://ca-test.adyen.com/ca/adl/img/flags/\"",
+      "to": "\"/store/mystore/flags/\""
+    },
+    {
+      "name": "disable-psp-query-redirect-recovery",
+      "from": "function(t){j.apply(this,arguments)}(this.props)",
+      "to": "void 0"
+    },
+    {
+      "name": "remove-psp-click-to-pay-cart-widget",
+      "from": "(0,n.h)(Ue,null),",
+      "to": ""
+    },
+    {
+      "name": "remove-unconsumed-psp-shopper-email",
+      "from": "o.email&&(0,n.h)(\"div\",null,(0,n.h)(\"h3\",{className:\"checkout__order-summary__title\"},\"买家邮箱\"),(0,n.h)(\"div\",{className:\"checkout__order-summary__shopper-email\"},o.email)),",
+      "to": ""
+    },
+    {
+      "name": "express-controller-slot",
+      "from": "const Ee=(0,o.N)([\"settings\"],v)((function(t){var e=t.product,r=t.settings,o=t.setActiveSection,i=(0,vt.li)(null),a=(0,vt.hb)(_e(we().mark((function t(){var n,a,c,s,l;return we().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return n=u([e]),a=ve(n,r.currency),c={value:a,currency:r.currency},t.next=5,se({amount:c,countryCode:r.countryCode});case 5:return s=t.sent,t.next=8,(0,g.m)(Pe(Pe({session:s},le),{},{onPaymentCompleted:function(t){var e=t.resultCode;o(\"Authorised\"===e?\"/confirmation\":\"/error\")},onError:function(t){console.info(\"PayPal onError - error:\",JSON.stringify(t))}}));case 8:l=t.sent,i.current=new Ct.A(l,{isExpress:!0,blockPayPalVenmoButton:!0,blockPayPalCreditButton:!0,blockPayPalPayLaterButton:!0,onShippingAddressChange:function(){var t=_e(we().mark((function t(e,r,n){var o,i,a;return we().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:return o={sessionId:l.session.id,paymentData:n.paymentData,amount:{currency:c.currency,value:c.value+he({currency:c.currency,deliveryMethodId:\"1\"})},deliveryMethods:pe({currency:c.currency,deliveryMethodId:\"1\"})},t.next=3,ue(o);case 3:i=t.sent,a=i.paymentData,n.updatePaymentData(a);case 6:case\"end\":return t.stop()}}),t)})));return function(e,r,n){return t.apply(this,arguments)}}(),onShippingOptionsChange:function(){var t=_e(we().mark((function t(e,r,n){var o,i,a;return we().wrap((function(t){for(;;)switch(t.prev=t.next){case 0:if(!e.selectedShippingOption.label.includes(\"Teleport\")){t.next=2;break}return t.abrupt(\"return\",r.reject(e.errors.METHOD_UNAVAILABLE));case 2:return o={sessionId:l.session.id,paymentData:n.paymentData,amount:{currency:c.currency,value:c.value+he({currency:c.currency,deliveryMethodId:e.selectedShippingOption.id})},deliveryMethods:pe({currency:c.currency,deliveryMethodId:e.selectedShippingOption.id})},t.next=5,ue(o);case 5:i=t.sent,a=i.paymentData,n.updatePaymentData(a);case 8:case\"end\":return t.stop()}}),t)})));return function(e,r,n){return t.apply(this,arguments)}}(),onAuthorized:function(t,e){console.log(\"PayPal Express - onAuthorized\",t),e.resolve()}}).mount(\"#paypal-express\");case 10:case\"end\":return t.stop()}}),t)}))),[r.countryCode]);return(0,vt.vJ)((function(){return a(),function(){var t;null===(t=i.current)||void 0===t||t.remove()}}),[r.countryCode]),(0,n.h)(\"div\",{id:\"paypal-express\"})}))",
+      "to": "const Ee=(0,o.N)([\"settings\"],v)((function(t){return(0,n.h)(\"div\",{id:\"paypal-express\"},(0,n.h)(\"button\",{type:\"button\",className:\"button local-express-button\",onClick:function(){window.MyStoreLocal.express(t.product)}},\"立即购买\"))}))"
+    }
+  ]
+}

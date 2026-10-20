@@ -1,0 +1,54 @@
+{
+  "name": "a2a-jcardsim-x402",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "description": "A2A DID/VC with real jCardSim APDU signing and official x402 v2 on a local test EVM",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node launch.mjs",
+    "start:storefront": "node launch-storefront.mjs",
+    "test:storefront": "node --test test/storefront-controller.test.mjs",
+    "test:storefront-ui": "node scripts/storefront-ui-check.mjs",
+    "start:adyen": "node launch-adyen.mjs",
+    "test:adyen": "node --test test/adyen-shop-security.test.mjs",
+    "test:adyen-ui": "node scripts/adyen-ui-check.mjs",
+    "test": "node --test --test-concurrency=2 test/*.test.mjs",
+    "demo": "node scripts/demo.mjs",
+    "demo:payment": "node scripts/payment-demo.mjs",
+    "setup": "node scripts/setup-jcardsim.mjs",
+    "test:card": "node scripts/jcardsim-selftest.mjs",
+    "test:x402": "node --test test/x402-payment.test.mjs",
+    "start:dbac": "node launch-dbac.mjs",
+    "test:dbac": "node --test --test-concurrency=2 test/dbac*.test.mjs",
+    "demo:dbac": "node scripts/dbac-demo.mjs",
+    "styles:sync": "node scripts/sync-platform-styles.mjs",
+    "styles:check": "node scripts/sync-platform-styles.mjs --check",
+    "start:dual": "node launch-dual.mjs",
+    "test:dual": "node --test test/storefront-controller.test.mjs test/live-payment-session.test.mjs test/live-system.test.mjs",
+    "test:dual-ui": "node scripts/manual-mystore-dual-ui-check.mjs",
+    "test:intro-ui": "node scripts/intro-ui-check.mjs",
+    "test:manual-ui": "node scripts/manual-mystore-dual-ui-check.mjs"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1"
+  },
+  "dependencies": {
+    "@digitalbazaar/bbs-2023-cryptosuite": "2.0.1",
+    "@digitalbazaar/bls12-381-multikey": "2.2.0",
+    "@digitalbazaar/credentials-context": "3.2.0",
+    "@digitalbazaar/data-integrity": "2.5.0",
+    "@digitalbazaar/data-integrity-context": "2.0.1",
+    "@digitalbazaar/multikey-context": "2.0.1",
+    "@noble/curves": "1.9.1",
+    "@x402/core": "2.28.0",
+    "@x402/evm": "2.28.0",
+    "ganache": "7.9.2",
+    "jsonld-signatures": "11.6.0",
+    "playwright-core": "1.62.1",
+    "solc": "0.8.30",
+    "viem": "2.57.2"
+  }
+}

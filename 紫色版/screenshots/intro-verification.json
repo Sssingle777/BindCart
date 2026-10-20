@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "name": "Intro resources use the existing CSP, preserve both capabilities in sessionStorage, clear fragments, and issue no business or external requests",
+      "passed": true
+    },
+    {
+      "name": "Four requested viewports have no horizontal overflow; section navigation and anchor reload work",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion preference disables diagram animation",
+      "passed": true
+    },
+    {
+      "name": "Same-tab introduction-to-demo navigation loads both real iframes and all six roles without business POSTs",
+      "passed": true
+    },
+    {
+      "name": "Both desktop sizes support side/stack/fullscreen; actual six-role positions and dimensions match original CSS",
+      "passed": true
+    },
+    {
+      "name": "Role evidence dialog remains clickable",
+      "passed": true
+    },
+    {
+      "name": "Processing, pass, failure, waiting, unknown and idle have six distinct CSS color treatments",
+      "passed": true
+    },
+    {
+      "name": "Anonymous and malformed capabilities stay on the introduction, with a launcher prompt and no false connection claim",
+      "passed": true
+    },
+    {
+      "name": "Partial new launch capabilities cannot reuse a stale Owner key",
+      "passed": true
+    },
+    {
+      "name": "Storage-denied browser still removes secret fragments and explains recovery",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "intro-1920.png",
+    "intro-1920-full.png",
+    "intro-1440.png",
+    "intro-1440-full.png",
+    "intro-1366.png",
+    "intro-1366-full.png",
+    "intro-390.png",
+    "intro-390-full.png",
+    "dual-1920.png",
+    "roles-1920.png",
+    "before-dual-1920.png",
+    "before-roles-1920.png",
+    "dual-stack-1920.png",
+    "dual-fullscreen-1920.png",
+    "dual-1366.png",
+    "roles-1366.png",
+    "before-dual-1366.png",
+    "before-roles-1366.png",
+    "dual-stack-1366.png",
+    "dual-fullscreen-1366.png"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "failedResources": [],
+  "realBrowser": true,
+  "browserVersion": "155.0.4283.45",
+  "stateColors": {
+    "running": "rgb(102, 81, 155)|rgb(238, 232, 248)|rgb(215, 203, 229)",
+    "pass": "rgb(8, 116, 67)|rgb(230, 244, 236)|rgb(194, 228, 209)",
+    "fail": "rgb(180, 35, 24)|rgb(253, 238, 237)|rgb(245, 201, 196)",
+    "pending": "rgb(138, 91, 23)|rgb(255, 248, 233)|rgb(229, 208, 168)",
+    "unknown": "rgb(138, 91, 23)|rgb(255, 244, 219)|rgb(212, 182, 126)",
+    "idle": "rgb(112, 104, 121)|rgb(243, 241, 245)|rgb(221, 215, 230)"
+  },
+  "status": "passed",
+  "finishedAt": "2026-10-19T14:46:00.596Z"
+}

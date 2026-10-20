@@ -1,0 +1,763 @@
+{
+  "fetchedAt": "2026-10-16T08:07:17.489Z",
+  "source": "https://www.mystoredemo.io/",
+  "status": "Public deployed build; application source license not established. Third-party dependency notices retained separately.",
+  "originalBytesPreserved": true,
+  "files": [
+    {
+      "path": "1689f3f40b292d1de2c6.png",
+      "url": "https://www.mystoredemo.io/1689f3f40b292d1de2c6.png",
+      "bytes": 146798,
+      "sha256": "de4f26b98255394a4da98e9a91e86016604508f7e4e71ecba6bc999c06e321a4",
+      "contentType": "image/png"
+    },
+    {
+      "path": "18de63de22015de3e486.svg",
+      "url": "https://www.mystoredemo.io/18de63de22015de3e486.svg",
+      "bytes": 396,
+      "sha256": "3c71f0c1c61b4d1dc223089dd0a9af7252545dad9f8720f0fdd6642ffe180819",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "2d5aa9e22be92846d23e.png",
+      "url": "https://www.mystoredemo.io/2d5aa9e22be92846d23e.png",
+      "bytes": 55035,
+      "sha256": "ede7818f0773686bb6b1fa56c8a1e617039c98b20e6ea8d6ad438ba9de9e6ea1",
+      "contentType": "image/png"
+    },
+    {
+      "path": "30826fa7377366fb6e0e.svg",
+      "url": "https://www.mystoredemo.io/30826fa7377366fb6e0e.svg",
+      "bytes": 997,
+      "sha256": "7b0c6e065cac3c375724cdbec00184d3b9d8a911d26123bba65a3b88134a9649",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "44703f32f811a6225ad2.svg",
+      "url": "https://www.mystoredemo.io/44703f32f811a6225ad2.svg",
+      "bytes": 1583,
+      "sha256": "431a0a9adaaffb73377fa236270534580d2ddf535acb38b1ef0a269225a587da",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "5f41650dba4105822471.svg",
+      "url": "https://www.mystoredemo.io/5f41650dba4105822471.svg",
+      "bytes": 1947,
+      "sha256": "6ea468d160e513c4e54d7a769bb7c878d8ad27a183042dc41ac07e77984d6270",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "65a3bfd741d60f37ccaf.png",
+      "url": "https://www.mystoredemo.io/65a3bfd741d60f37ccaf.png",
+      "bytes": 2301,
+      "sha256": "d60fccf2e0e6d7910c6e4532b338d61982adb878205071ddd9d87192cb151508",
+      "contentType": "image/png"
+    },
+    {
+      "path": "6966d3ad4f0f644d236b.png",
+      "url": "https://www.mystoredemo.io/6966d3ad4f0f644d236b.png",
+      "bytes": 228536,
+      "sha256": "6198c205948c562357cfe4d6c0b6f3db52792c5ba5724dc9df74931b762f0b20",
+      "contentType": "image/png"
+    },
+    {
+      "path": "6ad4988f7468c17c268e.png",
+      "url": "https://www.mystoredemo.io/6ad4988f7468c17c268e.png",
+      "bytes": 205907,
+      "sha256": "f0cd429568db65c4feb2baf684b9a707d311cd115e5e6840e4f7fb9f4b1374df",
+      "contentType": "image/png"
+    },
+    {
+      "path": "6df62995d39927d21ba1.png",
+      "url": "https://www.mystoredemo.io/6df62995d39927d21ba1.png",
+      "bytes": 144410,
+      "sha256": "3237ec22cf4cf34e417d0d351411ae66e3396a99beec89b335ac37762c4d5e28",
+      "contentType": "image/png"
+    },
+    {
+      "path": "74a7fcc9408bb3887c31.png",
+      "url": "https://www.mystoredemo.io/74a7fcc9408bb3887c31.png",
+      "bytes": 330000,
+      "sha256": "5e98ce153db69e59250edfb6f429d04268baee5328490fc5233bce45a400532f",
+      "contentType": "image/png"
+    },
+    {
+      "path": "83e9bcddd77c527d279f.png",
+      "url": "https://www.mystoredemo.io/83e9bcddd77c527d279f.png",
+      "bytes": 1310786,
+      "sha256": "fb6d3613479b33fbc66f53dfa7ebcec6482266fa590463f72afd45e744202213",
+      "contentType": "image/png"
+    },
+    {
+      "path": "8db885d088ed05f4a2c1.png",
+      "url": "https://www.mystoredemo.io/8db885d088ed05f4a2c1.png",
+      "bytes": 357061,
+      "sha256": "d8256e6ea563c9272ef64b95b66d16e84329efe516431ce7fd0503e53a6ec7ca",
+      "contentType": "image/png"
+    },
+    {
+      "path": "967174ba6dc5a5f80144.svg",
+      "url": "https://www.mystoredemo.io/967174ba6dc5a5f80144.svg",
+      "bytes": 934,
+      "sha256": "d6fa4e67245eeacb672751ebb414cd956aab2c81bb9afceb6141d494c2cdde8b",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "9799164eb042283a3c9d.svg",
+      "url": "https://www.mystoredemo.io/9799164eb042283a3c9d.svg",
+      "bytes": 71622,
+      "sha256": "8dde32f358e1ed1278e8d5e3f1ef8dae27e71e515e62aefe792963d14b3a10ab",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "a7504eee284c774d0a73.png",
+      "url": "https://www.mystoredemo.io/a7504eee284c774d0a73.png",
+      "bytes": 111993,
+      "sha256": "8b83865005aac91a1158d47920ec97bd57449528408fe1c3c7d4119528343625",
+      "contentType": "image/png"
+    },
+    {
+      "path": "caed3044aaf07646a860.svg",
+      "url": "https://www.mystoredemo.io/caed3044aaf07646a860.svg",
+      "bytes": 318,
+      "sha256": "921e71316a664376bbb47b31b945066e507d8b0d401d13707eaf857caeb2320d",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "ec43189a4d3bd36f4cca.svg",
+      "url": "https://www.mystoredemo.io/ec43189a4d3bd36f4cca.svg",
+      "bytes": 734,
+      "sha256": "5b628c3475f8e8ca2494c6711e375741a853e96e2b141382de61e1c093750053",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "f6e7f6d7efa9bdeb212d.svg",
+      "url": "https://www.mystoredemo.io/f6e7f6d7efa9bdeb212d.svg",
+      "bytes": 84791,
+      "sha256": "307353232957fe8b2d8fa43a40f6118dfe345942f867b582348aed48eca94bed",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "ff0e4b0191980be4a839.png",
+      "url": "https://www.mystoredemo.io/ff0e4b0191980be4a839.png",
+      "bytes": 84411,
+      "sha256": "c1355c94dbd6508b82f023a6d9bb91e0a146d14fd553c02fc921ccffab2fe596",
+      "contentType": "image/png"
+    },
+    {
+      "path": "flags/ae.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/ae.svg",
+      "bytes": 315,
+      "sha256": "5ea677e98a403fe0402c65a57bb6646fc1927b09161343850b67d71b8f036d74",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/at.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/at.svg",
+      "bytes": 249,
+      "sha256": "77bca4fdef0118af5a22c0301581286886a210ccc271445be8b594e98e200054",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/au.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/au.svg",
+      "bytes": 765,
+      "sha256": "66656b6071c67b0960ad544abebeb2247956a05af70b468762ca199b0275f37e",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/be.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/be.svg",
+      "bytes": 280,
+      "sha256": "5a3e73ba6f66d5db9008b189424960fd2c8fea861d5e104004c64998ccc60f66",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/br.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/br.svg",
+      "bytes": 473,
+      "sha256": "a7d0b3c17424a80d71df146713e4974a4cfa9087178bbe5542df43a9a54f8a18",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/ca.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/ca.svg",
+      "bytes": 524,
+      "sha256": "f95d86f66dcde637d084ac1c164dcf40b132ebecf1f870a6e1a655e1f64e6799",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/ch.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/ch.svg",
+      "bytes": 565,
+      "sha256": "478840ba06f8e963e6c122e14dfaba95e065921caf046062736151d614a32fef",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/cn.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/cn.svg",
+      "bytes": 700,
+      "sha256": "419ddab24a585ed48e834cf16a9fd18f8f6ff72acd999ec1cd9883b2ad86a716",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/cz.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/cz.svg",
+      "bytes": 280,
+      "sha256": "55f05bf6a02f440a4e2fd69cc4a9ef5623bb7065c4818b2558280f6c55c55422",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/de.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/de.svg",
+      "bytes": 1297,
+      "sha256": "ae12eb3f0eb23fb77956279dadc6d1ef4320ee529573b012214082cf832abaa5",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/dk.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/dk.svg",
+      "bytes": 335,
+      "sha256": "e717cbfa6b845e480ed14aea11ef3d8460a9a8688b0d1e71b38ff0663139fa9c",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/es.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/es.svg",
+      "bytes": 762,
+      "sha256": "c04f16f21ef0e9fd92519bd89b62901a52d1ee2be1897e954ac8cbf9ce62b25f",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/fi.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/fi.svg",
+      "bytes": 255,
+      "sha256": "b8bde1333960df2003fab3cc68afc2560322ee8564cd36016ee4c283f90161ed",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/fr.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/fr.svg",
+      "bytes": 277,
+      "sha256": "a8bc3fbc2cdd7d139c9f9d36ba1cb818fbe994d6c73797b158e90d8f477e5f79",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/gb.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/gb.svg",
+      "bytes": 1071,
+      "sha256": "1ca944ebd84138fd44c0d0251b5e4744d8febff295cfa121ed1b5422c817f984",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/gr.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/gr.svg",
+      "bytes": 327,
+      "sha256": "411412d2a972172129c0082e1a77f7ac473feea5c1bd5285e52e3088e64c377c",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/hk.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/hk.svg",
+      "bytes": 1174,
+      "sha256": "c2c1a0fa12c84d9da98022fb96d68c3ee83e3ea61c5c337b9f658e4d60c984e2",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/id.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/id.svg",
+      "bytes": 248,
+      "sha256": "7f1456e65789740732049eccc5c042bc809eced57a18a005ba280df9aae76c77",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/in.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/in.svg",
+      "bytes": 432,
+      "sha256": "f8932614369f9ffa50867c5507650e7e207834a1d4b61275b79fb2c76f3d4a38",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/it.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/it.svg",
+      "bytes": 277,
+      "sha256": "fd79b46a22e1c2d1e159e5bd228d46938f60e663c3dc32667e9a6d76a0e7738b",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/jp.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/jp.svg",
+      "bytes": 260,
+      "sha256": "58987aa6ed9b3034cd1fb0e11c05a6090166e57420c19e741dba2b3533f008be",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/ke.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/ke.svg",
+      "bytes": 1576,
+      "sha256": "5a94ec096067a3e5134b600495e9b6bcfa7528944116f2e8995a0abe20005197",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/kr.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/kr.svg",
+      "bytes": 1469,
+      "sha256": "24670bdcfb7c280cc93ddd65bd66c272f1d8a874bb7ac35005a9a62fa8cfcbc3",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/mx.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/mx.svg",
+      "bytes": 450,
+      "sha256": "38b60eb7584c1f194eee030a022e8b214a2c0a05a09ddf41c95497cf799105d3",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/my.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/my.svg",
+      "bytes": 586,
+      "sha256": "c93b80a0d5ac7796204506ee64a8b57d3132d93fe6fa39de3d58178e6599d6d1",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/nl.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/nl.svg",
+      "bytes": 288,
+      "sha256": "84548a98acc1a7606343fb30f279bf54ea967e7e4bb26ebd85eab32a38502d92",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/no.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/no.svg",
+      "bytes": 347,
+      "sha256": "b63afef7e28ee8305ac18a88e52796a0a44e7cfae26afddf109b0371fc612c32",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/nz.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/nz.svg",
+      "bytes": 993,
+      "sha256": "ff776f0cd0f777542f45a180077339e92d910169f88a2f5ffefdba64383a6132",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/ph.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/ph.svg",
+      "bytes": 748,
+      "sha256": "8c04f8cfe959737bdbe6482f0b00e1b8496e6cd3865f8697731ab0431b62ce34",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/pl.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/pl.svg",
+      "bytes": 248,
+      "sha256": "02fb20ed1e6059425e9ff0bf72b789533fed9ca06c605803c9b3585b64d8ea00",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/pt.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/pt.svg",
+      "bytes": 678,
+      "sha256": "4288fee97546a4e25fe8e2867c811cfd976f1d5de317a39ebb225e20e77adda7",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/ru.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/ru.svg",
+      "bytes": 288,
+      "sha256": "82ca140c843bef0c2d8a8b7bbcfa0785b59455e40525faa272749067bf8a7fb0",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/se.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/se.svg",
+      "bytes": 387,
+      "sha256": "eb3b4fdb8d92d63bd86507f7f0ba23d0d2659108ab8fc2c0719fdaeba9d5db89",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/sg.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/sg.svg",
+      "bytes": 501,
+      "sha256": "eb44689e821497062e2f5efc56e4689f3a2096d41f7bd046837ebc014cc71940",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/th.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/th.svg",
+      "bytes": 300,
+      "sha256": "4448fc6344ef9495781670aa33115f345695bf6325ed1ca236ef30ed7230a729",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/us.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/us.svg",
+      "bytes": 1040,
+      "sha256": "cc5a0802481ac2deb5d1ed098fcb453475ee070e2f95d06b1e8079a0122acc52",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "flags/vn.svg",
+      "url": "https://ca-test.adyen.com/ca/adl/img/flags/vn.svg",
+      "bytes": 316,
+      "sha256": "9d5e1816e5df138236d171eaa8320bad786ab6ed8cc4b02e37bc2fe787f7cafd",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "fonts/font-files/Inter-Black.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Black.woff2?v=4.1",
+      "bytes": 111668,
+      "sha256": "12ed0eed6749099b46c7b2e8198dc30c2d7e0f2a4e5fb1d12f0b6ae2c4f33cc4",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-BlackItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-BlackItalic.woff2?v=4.1",
+      "bytes": 118420,
+      "sha256": "308e101141e9dee3b6b121614da03969eb8179886975a9eeb5348021b04368fe",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-Bold.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Bold.woff2?v=4.1",
+      "bytes": 114840,
+      "sha256": "fa888127b6da015b65569f0351f3b5c391ad928904951f1c20e9f8462a8d95ea",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-BoldItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-BoldItalic.woff2?v=4.1",
+      "bytes": 121500,
+      "sha256": "4a10532d76c90c4597c0ad4bfc9284600e597d3012dd1ec16c1d44e0ad0058ab",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-ExtraBold.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-ExtraBold.woff2?v=4.1",
+      "bytes": 114856,
+      "sha256": "6f75025856f8db1b2186e9cb89be9de9894932c8b7b20f4df5e65916ff714e34",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-ExtraBoldItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-ExtraBoldItalic.woff2?v=4.1",
+      "bytes": 121516,
+      "sha256": "53bb20ba292e2ac28a0777bf0f56f31b98be432a3cc04359e2eb608c758349c7",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-ExtraLight.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-ExtraLight.woff2?v=4.1",
+      "bytes": 112728,
+      "sha256": "ba4fc81dbb25871f1bcabc664b1e37703fca0a05f7248a923e7db497c6d211cc",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-ExtraLightItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-ExtraLightItalic.woff2?v=4.1",
+      "bytes": 119320,
+      "sha256": "38bad3a6a9ad1a7fcd8082e6423ba5e0baea16598f2cf304e527844f697e32b2",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-Italic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Italic.woff2?v=4.1",
+      "bytes": 117700,
+      "sha256": "2d078cb3bc8f934740d53b39dd23b0678f2f97477e49ec785dd9d8acd8b96bfc",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-Light.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Light.woff2?v=4.1",
+      "bytes": 112592,
+      "sha256": "e111a1e2ad914ccda9179b95e83fb10234dd52a1932e0b93c480476227983fd9",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-LightItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-LightItalic.woff2?v=4.1",
+      "bytes": 119608,
+      "sha256": "050265b27d11860a26c66c054210852661abb5d229c4e0bb3525757a830f3790",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-Medium.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Medium.woff2?v=4.1",
+      "bytes": 114348,
+      "sha256": "0ff3e94614e1493eb556314fd247ae6c4a85a7783b4cc86be539940cf83f2a48",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-MediumItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-MediumItalic.woff2?v=4.1",
+      "bytes": 120784,
+      "sha256": "1b0df503de488a92082a8c5d72ddc4c0229183ceb645ae1c25c2d0d63778517c",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-Regular.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Regular.woff2?v=4.1",
+      "bytes": 111268,
+      "sha256": "e06f6b1bc553aaea4e4668023ed0ab0a147129c3107f511bc7d03d361b0ae085",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-SemiBold.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=4.1",
+      "bytes": 114812,
+      "sha256": "5cb7103e4e605989afebc03d989c79201e54b21b5183db33981f70db9178a301",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-SemiBoldItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-SemiBoldItalic.woff2?v=4.1",
+      "bytes": 121416,
+      "sha256": "5e2a2bc3b5b9af0644f005693b10499dab18065d6aedbf46c8b74ccede27daeb",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-Thin.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-Thin.woff2?v=4.1",
+      "bytes": 109548,
+      "sha256": "70ca998635d9fc627dede8108f04d0989e6e03346183f0ad0917723e790f6973",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/Inter-ThinItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/Inter-ThinItalic.woff2?v=4.1",
+      "bytes": 116880,
+      "sha256": "930d666b74e0dc0c26c2821f5643b701f8a41beaf3bb95ce146298104f29169c",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Black.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Black.woff2?v=4.1",
+      "bytes": 110308,
+      "sha256": "05650cb83c70fda2a465eade0c0a1a6c25d37ec49df3cd74b7e564683f9729f1",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-BlackItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-BlackItalic.woff2?v=4.1",
+      "bytes": 116820,
+      "sha256": "9746bf2bd43fe158144b83ede747088e80396daad55b9e6ea7232e0e22ee6fce",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Bold.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Bold.woff2?v=4.1",
+      "bytes": 113556,
+      "sha256": "23bc37619593377e128f24660fedb2869d18277b4026cb46e5637be7643faf91",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-BoldItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-BoldItalic.woff2?v=4.1",
+      "bytes": 120432,
+      "sha256": "5a0fe1f01b8777fab4a5f73c757743fa52579c7723b0291777625cb53c0a792a",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-ExtraBold.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-ExtraBold.woff2?v=4.1",
+      "bytes": 113636,
+      "sha256": "97eeee5a6f4f22fef1f607cf8836104d65968f03e59bc068a7586bf18364a8a7",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-ExtraBoldItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-ExtraBoldItalic.woff2?v=4.1",
+      "bytes": 120712,
+      "sha256": "159b72ba47887032915420aa1445ae6768197e7ea732230182998f14d1cdb932",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-ExtraLight.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-ExtraLight.woff2?v=4.1",
+      "bytes": 113108,
+      "sha256": "9031b6d2a1a559753d50b311ecb463ddf7acaaae1d992a7e9b009620d8ce6def",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-ExtraLightItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-ExtraLightItalic.woff2?v=4.1",
+      "bytes": 120124,
+      "sha256": "e8d7078160ef92b82c2123857c1b3aefaa4a795a44b56df5fe3edade60d81576",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Italic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Italic.woff2?v=4.1",
+      "bytes": 116988,
+      "sha256": "dfd398d7372b61278e1505bfbdfc5ab0f6511ef887a47a2c90c13475eae585da",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Light.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Light.woff2?v=4.1",
+      "bytes": 112976,
+      "sha256": "01dd2d491ed863177e61f6e9458813baa85453ad97b32c5c1216927d4eebfe65",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-LightItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-LightItalic.woff2?v=4.1",
+      "bytes": 119692,
+      "sha256": "59b5be56306fd353d067aa6995c2c92bc3feb3ace73684d94e3c6e73fe2beaac",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Medium.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Medium.woff2?v=4.1",
+      "bytes": 113476,
+      "sha256": "f1227907684853882ad00d7f97ce9f64bc17b89a2a291a7d4ec84fccfa442934",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-MediumItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-MediumItalic.woff2?v=4.1",
+      "bytes": 120560,
+      "sha256": "6bf254c1a65c806c019f52818add66747da83595a314112917911bcf5fa2f5c5",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Regular.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Regular.woff2?v=4.1",
+      "bytes": 108948,
+      "sha256": "3a9463a58c3e7ba1e3cd65b5dbff91a35c508ff78a104cd1121feff83efeb787",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-SemiBold.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-SemiBold.woff2?v=4.1",
+      "bytes": 113772,
+      "sha256": "d9f63a82b826fb0117c92715c3a52a2d2247bc321bc39341420bf52d91e8277a",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-SemiBoldItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-SemiBoldItalic.woff2?v=4.1",
+      "bytes": 120468,
+      "sha256": "dd9d78314bdd5062302a73c7e2954008bab8158304fa7ac4f0ea8977b841dccb",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-Thin.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-Thin.woff2?v=4.1",
+      "bytes": 108820,
+      "sha256": "21cfe42e7f1031b410e247ed199f43fc362415af81b3a8e442a97f63b4dbe327",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterDisplay-ThinItalic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterDisplay-ThinItalic.woff2?v=4.1",
+      "bytes": 116040,
+      "sha256": "eff21589eacf1f6a596191038d7b47b4dd2455a096b175bb3572ecb6d026a611",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterVariable-Italic.woff2",
+      "url": "https://rsms.me/inter/font-files/InterVariable-Italic.woff2?v=4.1",
+      "bytes": 387976,
+      "sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/font-files/InterVariable.woff2",
+      "url": "https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1",
+      "bytes": 352240,
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3",
+      "contentType": "font/woff2"
+    },
+    {
+      "path": "fonts/inter.css",
+      "url": "https://rsms.me/inter/inter.css",
+      "bytes": 11497,
+      "sha256": "46d01c7807f64a24c1b2853b756ef15f3a2facdf4a9f066eaf5d39c0c9935441",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "fonts/LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a",
+      "contentType": "text/plain"
+    },
+    {
+      "path": "index.html",
+      "url": "https://www.mystoredemo.io/",
+      "bytes": 1597,
+      "sha256": "dfea6e7faa3cdbe70b6202507cbeb3650d653a0b41f9979f29645a29a4669474",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "path": "main.bundle.js",
+      "url": "https://www.mystoredemo.io/main.bundle.js",
+      "bytes": 104944,
+      "sha256": "a375d3eacfa8e9744936e1ac946f605583db411db17077efe2cdaea5671b9eda",
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "main.bundle.js.LICENSE.txt",
+      "url": "https://www.mystoredemo.io/main.bundle.js.LICENSE.txt",
+      "bytes": 149,
+      "sha256": "cdf963ced7d25a0f98901a547647b4d6e2dbe0197fd78c87a059a87b0e542fe2",
+      "contentType": "text/plain; charset=UTF-8"
+    },
+    {
+      "path": "main.css",
+      "url": "https://www.mystoredemo.io/main.css",
+      "bytes": 10917,
+      "sha256": "cbbd4ea60a189c264724e66626a375731613599bbb54f3826c27e4da99f05ba0",
+      "contentType": "text/css; charset=UTF-8"
+    },
+    {
+      "path": "runtime.bundle.js",
+      "url": "https://www.mystoredemo.io/runtime.bundle.js",
+      "bytes": 1833,
+      "sha256": "76d6eee081f3c88d90e3b34a680ab267db5b2a487a1cfc46566dafd19dde5b3c",
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "vendors.bundle.js",
+      "url": "https://www.mystoredemo.io/vendors.bundle.js",
+      "bytes": 1153939,
+      "sha256": "ecf13d6adecc24466d7bac2db6f43e64fbc82f7a1b4dad94823493f316d92ea9",
+      "contentType": "application/javascript; charset=UTF-8"
+    },
+    {
+      "path": "vendors.css",
+      "url": "https://www.mystoredemo.io/vendors.css",
+      "bytes": 146134,
+      "sha256": "c262725dc986d0faa96197b94299dcfdad0c197fa378c908e69ed37a27590b42",
+      "contentType": "text/css; charset=UTF-8"
+    }
+  ],
+  "unavailableUpstream": [
+    {
+      "path": "favicon.ico",
+      "url": "https://www.mystoredemo.io/favicon.ico",
+      "status": 404
+    },
+    {
+      "path": "assets/icons/favicon-16x16.png",
+      "url": "https://www.mystoredemo.io/assets/icons/favicon-16x16.png",
+      "status": 404
+    },
+    {
+      "path": "assets/icons/favicon-32x32.png",
+      "url": "https://www.mystoredemo.io/assets/icons/favicon-32x32.png",
+      "status": 404
+    },
+    {
+      "path": "assets/icons/apple-touch-icon.png",
+      "url": "https://www.mystoredemo.io/assets/icons/apple-touch-icon.png",
+      "status": 404
+    },
+    {
+      "path": "assets/icons/safari-pinned-tab.svg",
+      "url": "https://www.mystoredemo.io/assets/icons/safari-pinned-tab.svg",
+      "status": 404
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+Official source
+Repository: https://github.com/adyen-examples/adyen-node-online-payments
+Commit: 1ad09b59ecd7965d1710e9197f0c0c333adc5821
+Templates: checkout-example/_archive/v5/views/
+License: MIT (see LICENSE).
+
+The four stored templates, application stylesheet and upstream images retain
+their original bytes. source.json records SHA-256 and Git blob SHA-1 values.
+Bootstrap 4.3.1 is served locally; its SHA-384 equals the integrity attribute
+already present in the official layout. No custom storefront CSS is loaded.
+
+Runtime adaptation is isolated in lib/storefront/native-render.mjs and
+public/store/app.js. The renderer performs the original template substitutions,
+mounts links and assets under /store/, and replaces the external Adyen SDK and
+Adyen implementation script with the local controller bridge. It does not
+translate or rewrite the original Cart or result text, layout, or styles.
+
+The official preview is intentionally a fixed cart containing one Sunglasses
+and one Headphones, each 50.00, total 100.00. The bridge prepares exactly those
+backend quantities and verifies the total before checkout. Local ledger units
+remain TEST_USDC; the fixed original UI does not display a currency symbol.
+The mechanism page identifies this as a local simulation.
+
+The upstream payment slot is empty without an Adyen client key and session.
+After actual credential/holder/device verification succeeds, the bridge adds
+one button, 'Pay 100.00', using the existing upstream .button class. Clicking it
+explicitly approves the matching Owner proposal, then invokes the original
+local x402 payment controller. This button is the necessary local payment
+adapter, not an Adyen component, card form or external payment integration.
+No merchant account, Adyen SDK or real payment service is connected.
+
+The success/pending/failed result copy and artwork are rendered from the
+official result template. Server-side controller state decides which result
+can be shown; a URL alone does not assert a successful payment. Detailed
+authorization, simulation and merchant-recovery evidence belongs to the
+separate mechanism page.
+
+Provenance check: node scripts/native-mystore-source-check.mjs

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer">
+  <title>凭证与设备 · 安全实验</title>
+  <link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/verification.css"><link rel="stylesheet" href="/platform.css"><link rel="stylesheet" href="/embed.css"><link rel="stylesheet" href="/workspace.css">
+  <script src="/embed.js" defer></script><script src="/verification.js" defer></script><script src="/workspace.js" type="module"></script>
+</head>
+<body class="platform-workspace">
+<main class="workspace-page">
+  <header class="workspace-heading ui-context-bar">
+    <div class="workspace-heading-copy"><p class="eyebrow" id="workspace-eyebrow">演示准备</p><h1 id="workspace-title">正在读取</h1><p id="workspace-intro"></p></div>
+    <div class="workspace-toolbar"><label for="workspace-mode">设备证明模式<select id="workspace-mode"><option value="bbs-bls">普通 BLS</option><option value="bbs-blind-bls">盲化 BLS</option></select></label><button id="workspace-refresh" type="button" class="refresh-button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 8a8 8 0 1 0 0 8M20 3v5h-5" stroke-linecap="round" stroke-linejoin="round"/></svg>刷新状态</button></div>
+  </header>
+  <div class="workspace-statusbar">
+    <nav class="platform-context" aria-label="模块导航"><a href="/#view=guide" data-demo-view="guide">返回演示平台</a><span>本地测试环境</span></nav>
+    <details class="lab-reading-guide"><summary>实验如何运行</summary><div class="lab-process" aria-label="实验流程"><span><i>01</i>选择场景</span><b aria-hidden="true">→</b><span><i>02</i>构造场景请求</span><b aria-hidden="true">→</b><span><i>03</i>检查请求结果</span><b aria-hidden="true">→</b><span><i>04</i>核对实验记录</span></div><p>先验证合法控制组，再提交场景请求；展开说明不会运行实验。</p></details>
+    <div class="feedback-line"><span class="feedback-dot" aria-hidden="true"></span><p id="workspace-feedback" class="workspace-feedback" role="status" aria-live="polite">正在读取当前状态…</p></div>
+  </div>
+  <section id="manage-content" hidden></section>
+  <section id="attack-content" hidden>
+    <div class="attack-workbench">
+      <article class="workspace-card ui-card scenario-panel">
+        <div class="section-heading"><div><h2>实验场景设置</h2></div><span class="quiet-caption">选择并运行</span></div>
+        <label for="attack-scenario" class="field-label">请求场景</label><select id="attack-scenario"></select>
+        <div id="attack-premise"></div>
+        <div class="scenario-action"><button id="attack-run" class="send-button" type="button" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m9 5 10 7-10 7V5Z" stroke-linejoin="round"/></svg>运行单个实验</button><p>先验证合法控制组，再提交场景请求。</p></div>
+        <div class="boundary-note"><span aria-hidden="true">i</span><p>白盒夹具用于构造异常输入，不代表攻击者拥有持有者 A 或设备权限。结果以本次请求的检查记录为准。</p></div>
+      </article>
+      <article class="workspace-card ui-card result-panel"><div class="section-heading"><div><h2>本次实验结果</h2></div><span class="quiet-caption">以本次返回为准</span></div><div id="attack-result"></div></article>
+    </div>
+    <section class="workspace-card ui-card evidence-card"><div class="section-heading"><div><h2>本次验证记录</h2></div><span class="quiet-caption">本次请求返回的结果</span></div><p class="section-description" id="attack-evidence-caption">运行实验后，可查看检查顺序、拒绝位置与接收方收到的材料。</p><details class="evidence-disclosure ui-evidence" id="attack-evidence-details"><summary id="attack-evidence-summary"><span>逐项验证记录</span><span class="summary-caption">检查项 · 观测值 · 验证依据</span></summary><div id="attack-trace"></div></details><details class="evidence-disclosure ui-evidence"><summary><span>本次请求与原始公开结果</span><span class="summary-caption">JSON</span></summary><pre id="attack-raw">尚无结果</pre></details></section>
+    <details class="comparison-section ui-evidence"><summary>实验方法与验证能力说明<span class="quiet-caption">签名格式不等于安全结论</span></summary><div class="baseline-grid">
+      <article><span class="baseline-number">01</span><div><h3>仅凭证验真</h3><p>检查签发者与凭证内容。合法可验证凭证（VC）本身不能证明当前使用者拥有必要秘密。</p></div></article>
+      <article><span class="baseline-number">02</span><div><h3>增加持有者证明 <small>单方基线未实现</small></h3><p>当前持有者 Ed25519 证明需与设备共同验证；不展示独立单方基线的比较成绩。</p></div></article>
+      <article><span class="baseline-number">03</span><div><h3>增加设备共同参与 <small class="implemented">当前完整路径</small></h3><p>查看本次认证结果与拒绝阶段。认证通过不等于用户授权，用户批准不等于支付完成。</p></div></article>
+      <article><span class="baseline-number">04</span><div><h3>已有基础 JWS 对照</h3><p>具名 VC 与独立签名。JWS 是签名封装格式，本身不等同于不安全。</p><a href="/#view=identity" data-demo-view="identity">查看基础 JWS 对照 <span aria-hidden="true">↗</span></a></div></article>
+    </div></details>
+  </section>
+  <footer class="workspace-footer"><span>软件模拟 eSIM · 本地测试环境</span><span>公开证据可核对，私钥不展示</span></footer>
+</main>
+</body></html>

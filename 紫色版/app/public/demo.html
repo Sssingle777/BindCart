@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#141a2c"><title>智能体可信身份 · 演示平台</title><link rel="stylesheet" href="/tokens.css"><link rel="stylesheet" href="/demo.css"><script src="/demo.js" type="module"></script></head>
+<body data-module="guide" data-presentation="compact">
+<a class="skip-link" href="#demo-content">跳到演示内容</a>
+<aside id="platform-navigation" class="demo-header" aria-label="平台导航" tabindex="-1" hidden>
+  <a class="brand" href="#view=guide&scenario=normal"><span class="brand-mark" aria-hidden="true">◈</span><span>智能体可信身份<small>凭证防冒用演示平台</small></span></a>
+  <p class="navigation-label">演示与管理</p>
+  <nav class="demo-tabs" role="tablist" aria-label="平台模块" aria-orientation="vertical">
+    <button id="tab-guide" role="tab" aria-selected="true" aria-controls="panel-guide" data-view="guide" disabled><span class="nav-index">01</span><span>演示平台<small>三个场景 · 完整业务流程</small></span></button>
+    <button id="tab-manage" role="tab" aria-selected="false" aria-controls="panel-manage" data-view="manage" tabindex="-1" disabled><span class="nav-index">02</span><span>凭证与设备<small>签发、撤销与设备管理</small></span></button>
+    <button id="tab-attacks" role="tab" aria-selected="false" aria-controls="panel-attacks" data-view="attacks" tabindex="-1" disabled><span class="nav-index">03</span><span>安全实验<small>更多攻击与验证证据</small></span></button>
+    <button id="tab-owner" role="tab" aria-selected="false" aria-controls="panel-owner" data-view="owner" tabindex="-1" disabled><span class="nav-index">04</span><span>付款授权<small>核对条款 · 用户明确决定</small></span></button>
+  </nav>
+  <details class="platform-tools"><summary>辅助工具</summary><nav aria-label="辅助工具">
+    <button data-view="identity" disabled>基础 JWS 对照 <span>↗</span></button>
+    <button data-view="diagnostic" disabled>机制诊断 <span>↗</span></button>
+  </nav></details>
+  <div class="sidebar-note"><strong>从演示平台开始</strong><p>准备凭证 → 共同证明 → 验证资格 → 用户授权与模拟支付</p><span>认证通过、授权批准、支付完成分别展示。</span></div>
+  <footer class="sidebar-footer"><span class="environment-dot"></span><div>本地演示环境<small>软件模拟设备 · TEST_USDC</small></div></footer>
+</aside>
+<main id="demo-content" tabindex="-1">
+  <header class="workspace-topbar">
+    <div class="workspace-location"><span class="compact-brand">智能体可信身份</span><span class="platform-crumb">可信身份</span><span class="platform-crumb" aria-hidden="true">/</span><strong id="workspace-location">演示平台</strong><span id="workspace-description">正常支付、复制冒用与凭证撤销</span></div>
+    <nav id="shell-scenarios" class="shell-scenarios" aria-label="演示场景"><button id="scenario-normal" type="button" aria-pressed="true" disabled><span>01</span> 正常支付</button><button id="scenario-copied-vc" type="button" aria-pressed="false" disabled><span>02</span> 凭证复制冒用</button><button id="scenario-revoked" type="button" aria-pressed="false" disabled><span>03</span> 撤销后使用</button></nav>
+    <div id="shell-module-context" class="shell-module-context" hidden><strong id="shell-module-title">演示平台</strong></div>
+    <div class="workspace-actions"><span id="service-state" class="service-state" role="status">正在连接</span><button id="platform-tools-toggle" class="shell-button" type="button" aria-expanded="false" aria-controls="platform-navigation">平台工具</button><button id="presentation-toggle" class="shell-button presentation-toggle" type="button" aria-controls="platform-navigation" aria-pressed="true">展开平台导航</button></div>
+  </header>
+  <p id="entry-notice" class="entry-notice" role="status" hidden></p>
+  <div class="workspace-panels">
+    <section id="panel-guide" role="tabpanel" aria-labelledby="tab-guide" hidden><iframe id="frame-guide" title="演示平台：正常支付、复制冒用与凭证撤销" referrerpolicy="no-referrer"></iframe></section>
+    <section id="panel-manage" role="tabpanel" aria-labelledby="tab-manage" hidden><iframe id="frame-manage" title="凭证与设备管理" referrerpolicy="no-referrer"></iframe></section>
+    <section id="panel-attacks" role="tabpanel" aria-labelledby="tab-attacks" hidden><iframe id="frame-attacks" title="安全实验与验证记录" referrerpolicy="no-referrer"></iframe></section>
+    <section id="panel-owner" role="tabpanel" aria-labelledby="tab-owner" hidden><div id="owner-access-workspace" class="owner-access-workspace"><header class="access-heading"><h1>付款授权</h1><span>用户（Owner）· 权限尚未载入</span></header><form id="owner-access" class="owner-access" hidden><h2>载入本次 Owner 权限</h2><p>使用本次启动终端中的 Owner 专用链接。载入后查询申请，每笔批准或拒绝都需明确操作。</p><p class="access-boundary">这里只批准本笔付款授权，不会直接执行付款。</p><label for="owner-entry">Owner 专用链接或访问密钥</label><div class="access-controls"><input id="owner-entry" type="password" autocomplete="off" spellcheck="false" required placeholder="粘贴本次启动的 Owner 链接"><button type="submit">载入授权页面</button></div><p id="owner-access-feedback" role="status" aria-live="polite"></p><p class="access-note">统一入口在同一浏览器来源载入演示与 Owner 权限，不提供浏览器角色隔离。</p></form></div><iframe id="frame-owner" title="用户逐笔付款授权" referrerpolicy="no-referrer" hidden></iframe></section>
+    <section id="panel-identity" aria-label="基础 JWS 对照" hidden><iframe id="frame-identity" title="基础 JWS 具名凭证对照" referrerpolicy="no-referrer"></iframe></section>
+    <section id="panel-diagnostic" aria-label="机制诊断" hidden><iframe id="frame-diagnostic" title="支付与论文机制诊断" referrerpolicy="no-referrer"></iframe></section>
+  </div>
+  <noscript><p class="entry-notice">请启用 JavaScript 以运行演示。</p></noscript>
+</main></body></html>

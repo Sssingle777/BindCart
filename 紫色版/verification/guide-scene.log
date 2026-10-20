@@ -1,0 +1,27 @@
+✔ empty, disconnected and wrong-mode snapshots never create success or sample amounts (6.854ms)
+✔ device online, prepared public input, contribution and B verification remain distinct (39.0715ms)
+✔ only the actual in-flight request animates, with no invented internal progress (1.3915ms)
+✔ phase, order, attempt, selected phase and challenge mismatches cannot reuse current material or success (7.4679ms)
+✔ old ordinary device input is not rendered as this challenge contribution (1.4668ms)
+✔ default current-step projection suppresses prior-stage materials before a new phase starts (1.0286ms)
+✔ blind public fields and A-local context are described without emitting raw payloads or secrets (1.6781ms)
+✔ expiry and uncertain responses are visible and cannot produce fresh verifier success (1.3079ms)
+✔ Owner approval, wallet signature and receipt require their own actual records (3.131ms)
+✔ only a successful current-order receipt renders payment completion (8.1077ms)
+✔ unrun and pending experiments never forecast rejection or animate internal phases (1.6816ms)
+✔ copied VC uses a separate attacker and preserves actual early holder rejection with skipped device checks (1.5434ms)
+✔ revocation preserves original A and device, with material presence distinct from independent verification (0.8421ms)
+✔ experiment context mismatch, missing control, contradictions and incomplete runs cannot become successful defense (3.6337ms)
+✔ scene identity stays stable for repeated polling and changes only with actual context/results (2.1562ms)
+✔ renderer escapes public labels, keeps read-only evidence hooks and has at most two correctly directed arrows (2.0086ms)
+✔ SVG endpoints clear the node rectangles and invalid or self messages cannot emit NaN geometry (3.5609ms)
+✔ copied-scene labels use the central corridor and never intersect any role rectangle (1.4765ms)
+✔ ordinary and blind device labels clear all cards, including the single returned contribution after combination (2.56ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 510.3169
