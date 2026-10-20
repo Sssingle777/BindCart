@@ -1,4 +1,0 @@
-/* Only opt-in workspaces suppress the redundant standalone header in an iframe.
-   Each document still loads tokens + platform itself; the outer shell cannot style it. */
-.demo-embedded .platform-workspace .topbar,
-.demo-embedded .platform-workspace .platform-context { display:none; }
