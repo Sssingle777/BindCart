@@ -1,5 +1,5 @@
-ShoppingAuth · 浅科技蓝版
-2026-10-20 · 基于上一轮 V2 / ShoppingAuth 0.5.0
+ShoppingAuth · 浅色视觉修复版
+2026-10-20 · 基于已交付浅科技蓝版 / ShoppingAuth 0.5.0
 
 请完整解压整个 ZIP，再打开其中的 ShoppingAuth 文件夹。
 Windows：双击 Start-Windows.cmd。

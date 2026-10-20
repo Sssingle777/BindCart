@@ -1,23 +1,22 @@
 {
   "status": "passed",
   "sourceFiles": 17917,
-  "unchanged": 17911,
+  "unchanged": 17913,
   "changed": [
     "READ-FIRST.txt",
-    "app/public/dual.css",
-    "app/public/dual.html",
     "app/public/intro.css",
     "app/public/intro.html",
     "app/public/mechanism-visual.css"
   ],
-  "htmlStructureAndSvgGeometryUnchanged": true,
-  "nonVisualCssDeclarationsUnchanged": true,
+  "diagramGeometryLabelsAndPathsUnchanged": true,
+  "pageLayoutAndTypographyUnchanged": true,
+  "allJavaScriptBackendAndOriginalTestsUnchanged": true,
   "baselineArchiveUnchanged": true,
   "files": [
     {
       "path": "READ-FIRST.txt",
-      "bytes": 2836,
-      "sha256": "8cf4d41caa3617c86524ca156cf2e6dabe8fcbdb92471f371b7b8fdec5cf2f1f",
+      "bytes": 2854,
+      "sha256": "3e93417fa0fd4dbd1d8188a4270e482676e5cde9f1be3b94f1a7af787e6371d9",
       "changed": true
     },
     {
@@ -105126,13 +105125,13 @@
       "path": "app/public/dual.css",
       "bytes": 11134,
       "sha256": "fdf4209d9e28e30222d5b6a8ca78d3fb3668dd08601b7bbe020882222b47ded6",
-      "changed": true
+      "changed": false
     },
     {
       "path": "app/public/dual.html",
       "bytes": 5568,
       "sha256": "0d1f5c83c6244a2ca4c2a25fb21de295491e9ba6e797cbb9b8e4064a246739f2",
-      "changed": true
+      "changed": false
     },
     {
       "path": "app/public/dual.js",
@@ -105232,14 +105231,14 @@
     },
     {
       "path": "app/public/intro.css",
-      "bytes": 17512,
-      "sha256": "a4b52e0b53524c7f55be3d187e0f02c6d99d3c46e69a95b8672b25d70bac57a7",
+      "bytes": 17350,
+      "sha256": "e9e19289c5306a6d665e29b3be2e0ae1e15d796a081738df1377ee0c7c5e06d9",
       "changed": true
     },
     {
       "path": "app/public/intro.html",
-      "bytes": 17585,
-      "sha256": "a50021496883544f130b4c801e44f412ae935c0ccbbe960077e5d48d32a47176",
+      "bytes": 16836,
+      "sha256": "1d4af11f88643638d0c5eba791f33ed7be4fba632fb64d857b1cb07d24f29239",
       "changed": true
     },
     {
@@ -105256,8 +105255,8 @@
     },
     {
       "path": "app/public/mechanism-visual.css",
-      "bytes": 43769,
-      "sha256": "255e348d66b67a0912d575110c85ac0ca109207787da84880bb3d4d78f119c9a",
+      "bytes": 44473,
+      "sha256": "c48428199e8678a8adecee8f6c8f45ba39a0f5b52c9f08f876a247ce688bb26e",
       "changed": true
     },
     {

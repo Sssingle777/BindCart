@@ -162,6 +162,15 @@
 .mechanism-page .live-business-progress li[data-state=fail]::before{border-color:#e5484d;background:#e5484d;box-shadow:0 0 0 3px #fdecec}
 .mechanism-page .live-business-progress li[data-state=fail]::after{content:"!";position:absolute;left:50%;top:4px;z-index:3;width:14px;line-height:14px;color:#fff;font-size:9px;font-weight:700;transform:translateX(-50%)}
 
+/* The controller replaces this list only when its real business phase changes.
+   Starting styles also soften newly inserted steps without a timer or JS state. */
+.mechanism-page .live-business-progress li{transition:color .16s ease}
+.mechanism-page .live-business-progress li::before{transition:background .16s ease,border-color .16s ease,box-shadow .16s ease}
+@starting-style {
+  .mechanism-page .live-business-progress li[data-state=current]{color:var(--mech-muted)}
+  .mechanism-page .live-business-progress li[data-state=current]::before{border-color:var(--mech-line);background:#fff;box-shadow:0 0 0 3px #fff}
+}
+
 /* ---------- 手动控制台 ---------- */
 .mechanism-page .live-manual-console{
   margin-top:16px;padding:14px;border:1px solid #d7e5f5;border-radius:9px;
@@ -432,7 +441,8 @@
 .mechanism-page #live-scene .scene-node[data-state=fail]{border-color:#d85b57;background:#fff3f2;}
 .mechanism-page #live-scene .scene-wires{filter:none;}
 .mechanism-page #live-scene .scene-wire path{stroke:#6c8bb4;stroke-width:1.8}
-.mechanism-page #live-scene .scene-wire[data-state=running] path{stroke:var(--mech-accent-strong);stroke-dasharray:6 5;animation:scene-request 1s linear infinite}
+/* Match the shared -26px keyframe to two complete 7+6px dash periods. */
+.mechanism-page #live-scene .scene-wire[data-state=running] path{stroke:var(--mech-accent-strong);stroke-dasharray:7 6;animation:scene-request 1s linear infinite}
 .mechanism-page #live-scene .scene-wire[data-state=fail] path{stroke:#c94c51;}
 .mechanism-page #live-scene .scene-wires marker path{fill:#6c8bb4}
 .mechanism-page #live-scene .scene-labels{

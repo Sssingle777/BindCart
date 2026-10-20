@@ -1,0 +1,90 @@
+{
+  "realBrowser": true,
+  "viewports": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "page": "rgb(245, 247, 251)",
+      "nav": "rgb(245, 247, 251)",
+      "footer": "rgb(245, 247, 251)",
+      "heroImage": "none",
+      "bottomImage": "none",
+      "glowCount": 0,
+      "overflow": false,
+      "labels": [
+        "01 / 签发\n            03 / 请求设备\n            04 / 签名贡献\n            02 / 本轮挑战\n            06 / 联合验证"
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "page": "rgb(245, 247, 251)",
+      "nav": "rgb(245, 247, 251)",
+      "footer": "rgb(245, 247, 251)",
+      "heroImage": "none",
+      "bottomImage": "none",
+      "glowCount": 0,
+      "overflow": false,
+      "labels": [
+        "01 / 签发\n            03 / 请求设备\n            04 / 签名贡献\n            02 / 本轮挑战\n            06 / 联合验证"
+      ]
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "page": "rgb(245, 247, 251)",
+      "nav": "rgb(245, 247, 251)",
+      "footer": "rgb(245, 247, 251)",
+      "heroImage": "none",
+      "bottomImage": "none",
+      "glowCount": 0,
+      "overflow": false,
+      "labels": [
+        "01 / 签发\n            03 / 请求设备\n            04 / 签名贡献\n            02 / 本轮挑战\n            06 / 联合验证"
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "page": "rgb(245, 247, 251)",
+      "nav": "rgb(245, 247, 251)",
+      "footer": "rgb(245, 247, 251)",
+      "heroImage": "none",
+      "bottomImage": "none",
+      "glowCount": 0,
+      "overflow": false,
+      "labels": [
+        "01 / 签发\n            03 / 请求设备\n            04 / 签名贡献\n            02 / 本轮挑战\n            06 / 联合验证"
+      ]
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "Normal-motion path advances and loops seamlessly",
+    "Header stays uniform after scrolling, resizing and reload",
+    "Reduced-motion preference remains respected"
+  ],
+  "motion": {
+    "first": {
+      "name": "flow",
+      "offset": -17.5036,
+      "dash": "18px, 260px",
+      "time": 283.33200000000005,
+      "state": "running"
+    },
+    "second": {
+      "name": "flow",
+      "offset": -47.3588,
+      "dash": "18px, 260px",
+      "time": 766.5999999999999,
+      "state": "running"
+    },
+    "reducedMotion": false
+  },
+  "homeLoop": {
+    "end": -556,
+    "period": 278,
+    "seamless": true
+  },
+  "status": "passed"
+}

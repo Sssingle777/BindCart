@@ -1,7 +1,7 @@
 /* AGENT TRUST introduction. All theme values are local to this page. */
 :root {
   color-scheme: light;
-  --bg: #edf5ff;
+  --bg: #f5f7fb;
   --surface: #ffffff;
   --elevated:#e3efff;
   --ink: #173456;
@@ -13,7 +13,7 @@
   --mono: ui-monospace, "SFMono-Regular", Consolas, monospace;
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-synthesis: none;
-  background:linear-gradient(145deg, #e4f0ff 0%, #edf5ff 42%, #f7fbff 100%);
+  background: var(--bg);
   color: var(--ink);
 }
 
@@ -46,7 +46,8 @@ svg { display: block; }
   align-items: center;
   justify-content: space-between;
 
-  background:rgba(255,255,255,.65);}
+  background: var(--bg);
+}
 .wordmark {
   display: inline-flex;
   align-items: center;
@@ -108,7 +109,7 @@ h1 {
 .access-note { margin-top: 19px; max-width: 530px; font-size: 11px; line-height: 1.8; color: var(--quiet); }
 .access-note[data-warning=true] { color: #935f00; }
 
-/* The light is contained in the SVG, behind the protocol materials. */
+/* Keep the protocol materials above the flat shared page background. */
 .trust-figure { position: relative; min-width: 0; }
 .figure-heading {
   display: flex;
@@ -223,10 +224,10 @@ h1 {
 .request-envelope strong { display: block; font-size: 20px; font-weight: 500; margin: 15px 0 22px; color: #173456; }
 .request-envelope > div { display: flex; justify-content: center; gap: 24px; border-top: 1px solid var(--line); padding-top: 18px; font-size: 12px; color: #334b68; }
 
-/* Closing invitation echoes the hero light, at lower intensity. */
+/* The closing section shares the page background. */
 .demo-section {
   border-block: 1px solid var(--line);
-  background:radial-gradient(ellipse 460px 250px at 50% 100%, rgba(14,165,233,.10), transparent 100%);
+  background: var(--bg);
   padding-block: 88px;
 }
 .demo-inner { text-align: center; max-width: 780px; }
@@ -235,7 +236,8 @@ h1 {
 .demo-boundaries { display: flex; justify-content: center; gap: 22px; margin-top: 28px; font-size: 12px; color: #586b82; }
 .demo-boundaries > span:nth-child(even) { color:#586b82; }
 .site-footer { display: flex; justify-content: space-between; gap: 25px; padding-block: 38px; align-items: center; 
-  background:rgba(255,255,255,.4);}
+  background: var(--bg);
+}
 .site-footer .wordmark { font-size: 13px; }
 .site-footer p { font-size: 11px; color: var(--quiet); line-height: 1.9; }
 .site-footer > div p { margin-top: 10px; }

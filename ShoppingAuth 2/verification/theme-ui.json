@@ -202,10 +202,10 @@
   ],
   "contrast": [
     {
-      "page": "intro (gradient evaluated conservatively at #e4f0ff)",
+      "page": "intro (flat #f5f7fb page background)",
       "count": 105,
       "failures": [],
-      "minimum": 4.74
+      "minimum": 5.1
     },
     {
       "page": "dual shell",
@@ -215,13 +215,13 @@
     },
     {
       "page": "console",
-      "count": 123,
+      "count": 952,
       "failures": [],
       "minimum": 4.61
     },
     {
       "page": "role evidence dialog",
-      "count": 135,
+      "count": 964,
       "failures": [],
       "minimum": 4.61
     }

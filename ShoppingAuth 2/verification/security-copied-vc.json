@@ -1,12 +1,12 @@
 {
-  "id": "f578a34c-8d37-49ba-9a24-e45ebd08a889",
+  "id": "522eb5dc-79a4-401d-bdc7-e9dc4edd8b36",
   "scenarioId": "copied-vc",
   "scenario": "copied-vc",
   "kind": "black-box",
   "mode": "bbs-bls",
-  "startedAt": "2026-10-20T04:08:44.186Z",
-  "completedAt": "2026-10-20T04:08:46.400Z",
-  "durationMs": 2214,
+  "startedAt": "2026-10-20T05:06:48.729Z",
+  "completedAt": "2026-10-20T05:06:50.877Z",
+  "durationMs": 2148,
   "completion": "completed",
   "expected": "W3C_DEVICE_PROOF_REQUIRED",
   "actual": "W3C_DEVICE_PROOF_REQUIRED",
@@ -20,7 +20,7 @@
   },
   "control": {
     "accepted": true,
-    "challengeId": "3034e105-3daa-4396-980b-9148d4db8aaa",
+    "challengeId": "e00333a2-5d2d-467b-8931-b8c3ee4e84da",
     "verificationTrace": {
       "profile": "dbac-payment",
       "source": "agent-b",
@@ -81,8 +81,8 @@
               ],
               "observed": [
                 true,
-                1792469325,
-                1792469385
+                1792472810,
+                1792472869
               ],
               "match": true
             }
@@ -112,8 +112,8 @@
           "evidence": [
             {
               "label": "raw body SHA-256",
-              "expected": "XLRF94811H22uumPp7Cxt_O8VTZ7Y8eJCC_qN3beKI0",
-              "observed": "XLRF94811H22uumPp7Cxt_O8VTZ7Y8eJCC_qN3beKI0",
+              "expected": "ajFWfcA19W0iLXg7JyDVyETPIpkb7ZP5TMzAVgWNmvQ",
+              "observed": "ajFWfcA19W0iLXg7JyDVyETPIpkb7ZP5TMzAVgWNmvQ",
               "match": true
             }
           ]
@@ -165,8 +165,8 @@
             },
             {
               "label": "payment order ID",
-              "expected": "urn:uuid:7db5289f-bc6f-4cc3-9d26-01cb3621d8cc",
-              "observed": "urn:uuid:7db5289f-bc6f-4cc3-9d26-01cb3621d8cc",
+              "expected": "urn:uuid:babcb659-7ee0-4263-a226-b1f847bb7d3c",
+              "observed": "urn:uuid:babcb659-7ee0-4263-a226-b1f847bb7d3c",
               "match": true
             }
           ]
@@ -180,10 +180,10 @@
           "evidence": [
             {
               "label": "trusted merchant / snapshot SHA-256",
-              "expected": "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+              "expected": "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
               "observed": [
-                "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
-                "kBFdV_jZxy0A_Q4lAlD14BP8stfLkYazaEmMGkFlLQg"
+                "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
+                "rWNlB_pLtwgKP68fwZ5GgKXKojGttaeClIC1F-6cBn8"
               ]
             }
           ]
@@ -210,7 +210,7 @@
             },
             {
               "label": "expected presentationHeader (hex)",
-              "observed": "0f0346cd01f5cc106ec14d49f395a32514eea2c16004a8b8c4c508e9e4b807a0",
+              "observed": "6774e5b8d98d16ef4e107152dd06fafbbcf74e1f79f6e4dd23e1b2e38310f6c9",
               "note": "Verifier input; checked by bbs-2023."
             }
           ]
@@ -240,19 +240,19 @@
             {
               "label": "bindingId / mode / device contribution",
               "expected": [
-                "urn:uuid:779b9cad-cab5-435a-9d49-4242aed22183",
+                "urn:uuid:ac9a1810-e588-471c-86b8-7bd77a11b427",
                 "bbs-bls",
                 true
               ],
               "observed": [
-                "urn:uuid:779b9cad-cab5-435a-9d49-4242aed22183",
+                "urn:uuid:ac9a1810-e588-471c-86b8-7bd77a11b427",
                 "bbs-bls",
                 true
               ]
             },
             {
               "label": "hVC: derived credential hash",
-              "observed": "cm4NCvcmtVvt9F7sTbvYOCraLGAHtnnOihjRZoopt-I"
+              "observed": "_S0XONgYUKlU_rzIf_-cMNJ4aw5ywDM8myYgIjaBmjk"
             }
           ]
         },
@@ -292,14 +292,14 @@
                 "1=payments:pay",
                 "2=2026-10-20",
                 "3=bbs-bls",
-                "6=urn:uuid:779b9cad-cab5-435a-9d49-4242aed22183"
+                "6=urn:uuid:ac9a1810-e588-471c-86b8-7bd77a11b427"
               ],
               "observed": [
                 "0=authorized-agent",
                 "1=payments:pay",
                 "2=2026-10-20",
                 "3=bbs-bls",
-                "6=urn:uuid:779b9cad-cab5-435a-9d49-4242aed22183"
+                "6=urn:uuid:ac9a1810-e588-471c-86b8-7bd77a11b427"
               ]
             }
           ]
@@ -314,16 +314,16 @@
             {
               "label": "Abar / Bbar / Cbar (G1)",
               "observed": [
-                "8381c4fec7126338c767b6c2a604d94faa8df65c9e1f62926a37f005d77de90cad45a3288ee742ee66f412447ba3caa6",
-                "93342a4884d18e8a2dc9067f71187451234f9ce452f5dee7a8db1b098453c4ee565585bfc3752dd92337993f868c7dac",
-                "89f24f39d6a2c03ca02edf40f48c47dd98fe1efb2120956529e58b4352f2b199bf9daab7ba4a57f0f972803bb5732a54"
+                "82084768ec9d2f54775bea91e512648b521c0f04e74c6ba51047a935fd9470e30051079f029cb33f806039cc9b64725b",
+                "b1da9bbdd961ea34f2c18e139fdd72422a444270a40201ea681462237b3456fe8e6b9bc0855e0e3b2507a0faac25bf93",
+                "b77027c4a40b9afd7fad81f593061c08ae8f32303cb7a426b51088e31d4dbc895f14eec8d578d321e8bbb5880e9df40e"
               ]
             },
             {
               "label": "randomized key (G1) / pi_se (G2)",
               "observed": [
-                "b45c972fe0685f40e14dfdece8b7697d9a4e5ff673109e4c3e03ab66c9039179e0eb8e57b434b04ceb426615c5d58b14",
-                "80ce984bb2d8e8309b89875a52626dff6f5f59b1ad1bba66772e1619ad9188444a83fb534de1fb2471335c3fa2c2ffc913ff2181c34293b595f08a065ccf6f83351de2c488c480bc28ce378b8b965f876bafac959053058454a209ee17292985"
+                "b4df08f06aef675939ab97edc327516e244af9219b54a8866e1145d64ea7cc7438a4c245e482744b49239cf38bcb52e0",
+                "a8853fa83d3a30b6d379680ca18c63e7cdf76e19b7163208a26d78f50008d524c3328d791de979484a88be1a24e577c8148e38993aa12e8757a9fca7a2b0a99dd46f0c2c155674e484df732301397f449057557e0b68fe26df6d950576817c76"
               ]
             }
           ]
@@ -337,7 +337,7 @@
           "evidence": [
             {
               "label": "hash-to-curve point Q (G2)",
-              "observed": "af0c5c45e0b0b79a96cd95a10672a6c45f3333d1e313a8b5970a810ca3ded3b7c9ef013aba8f8209a3e8c9bb4405ca3703b9c7293ec3d711aa1c3f7292b7bb01f681cefc61c46b1f38382c4dab524f6cea3c0859d4cd49df07bf338f76ee5cdc"
+              "observed": "ad99d98e422fb63029fb72ce4880191fbeffb2611846ffd9bee2eaa91403b811357f5913a8a462504c58e24017d2b3d30ec6540d7fdfaf83c7c449cc4069890c5c3adef974be67928b3e58b24529300179e3f0a05f5142511fb017c0f1bd2e5c"
             },
             {
               "label": "e(H0,pi_se) = e(randomizedKey,Q)",
@@ -356,15 +356,15 @@
           "evidence": [
             {
               "label": "Fiat-Shamir challenge",
-              "expected": "1ec31f32790d3944ca8df42e8ff181cc656adf960a6c5ffcd0bb86c0f4c07b30",
-              "observed": "1ec31f32790d3944ca8df42e8ff181cc656adf960a6c5ffcd0bb86c0f4c07b30",
+              "expected": "46016ce3d61a6ef830f43702c426e6dc2ea87424c9c0e03f19ad029adf29df63",
+              "observed": "46016ce3d61a6ef830f43702c426e6dc2ea87424c9c0e03f19ad029adf29df63",
               "match": true
             },
             {
               "label": "reconstructed T1 / T2 (G1)",
               "observed": [
-                "ae3dc39b05abda2bef62b3b0f6970d4e4d474790629d87bd986031bbe603d2b5a86ca82128fd29134735a08cafcceef0",
-                "8428ea4d93c7357cc827faeb00db96ce01da20a0d341b0b6ca77bf720b124077c313934bf1f21537114ccbd1311bf12e"
+                "93961829491c889db7d26534ffa886ae2fb6179cfb8a14062d4af643a82c7d5e51e0ef7529554b647b15d9c39eac6629",
+                "90ad5f1562a8575f84ebd7d8b47ef5debd1e607a86a33deb6f46cc128091fbddcde2de69cce00c094ebc6bfdd4171d6f"
               ]
             }
           ]
@@ -378,7 +378,7 @@
           "evidence": [
             {
               "label": "issuer public key W (G2)",
-              "observed": "8ec7bc5478b3bb4266134d4a81ec0aea85c31705d605c950611d9a8620174248ca462ebe6774ffcf5143d037aa6c0c1f1404df757fd5ac67cac354891990adbb8111c6cee29968e88733118c7cdf5509acdda081e8754fbabd0aac68c3862a14"
+              "observed": "83a5c1a74355705ee90cb2911cfc7dac7af86fa695ea0efe81e5383b8ba13d487eed785c6a93e8f83f201d25959894c70dfed77ae1bcbca50a6d1ffaeb097616c77c21ca84a65aa22d1e72a3b121f00852d668b63b5470bd15d79e3f73b4564a"
             },
             {
               "label": "e(Abar,W) = e(Bbar,G2)",
@@ -398,8 +398,8 @@
             {
               "label": "issuer-protected holder key / signed input digest",
               "observed": [
-                "i-zI002iORq_XSfqgfTOOFNnKi7wOq88hrYcCuaeA5M",
-                "Sk8HLrT7V3eU0cYpliCFPJaDzCqV7VS54_WURy9l11A"
+                "umSLEEAPR9_uA0yOJMZ0HhddNMN4p8a3Bl_z4jkboMY",
+                "vsjuyyMAUbbrl5h0SKtcdtPpD7yz3wjdZ4gfyyK_ALQ"
               ],
               "match": true
             }
@@ -418,7 +418,7 @@
               "observed": [
                 "valid",
                 "trusted-local-issuer",
-                "2026-10-20T04:08:46.085Z"
+                "2026-10-20T05:06:50.544Z"
               ],
               "match": true
             }
@@ -439,8 +439,8 @@
               ],
               "observed": [
                 false,
-                1792469326,
-                1792469385
+                1792472810,
+                1792472869
               ]
             },
             {
@@ -552,8 +552,8 @@
             ],
             "observed": [
               true,
-              1792469326,
-              1792469386
+              1792472810,
+              1792472870
             ],
             "match": true
           }
@@ -583,8 +583,8 @@
         "evidence": [
           {
             "label": "raw body SHA-256",
-            "expected": "SnOqhIq9jY1vAG4lBcBOD1MIniMSH2ar0CTHBSs0Txo",
-            "observed": "SnOqhIq9jY1vAG4lBcBOD1MIniMSH2ar0CTHBSs0Txo",
+            "expected": "Mu4CAV0ssK30SJWsgIxhgaKwoI1T5qWCpp66d-BpCa0",
+            "observed": "Mu4CAV0ssK30SJWsgIxhgaKwoI1T5qWCpp66d-BpCa0",
             "match": true
           }
         ]
@@ -636,8 +636,8 @@
           },
           {
             "label": "payment order ID",
-            "expected": "urn:uuid:7db5289f-bc6f-4cc3-9d26-01cb3621d8cc",
-            "observed": "urn:uuid:7db5289f-bc6f-4cc3-9d26-01cb3621d8cc",
+            "expected": "urn:uuid:babcb659-7ee0-4263-a226-b1f847bb7d3c",
+            "observed": "urn:uuid:babcb659-7ee0-4263-a226-b1f847bb7d3c",
             "match": true
           }
         ]
@@ -651,10 +651,10 @@
         "evidence": [
           {
             "label": "trusted merchant / snapshot SHA-256",
-            "expected": "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+            "expected": "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
             "observed": [
-              "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
-              "kBFdV_jZxy0A_Q4lAlD14BP8stfLkYazaEmMGkFlLQg"
+              "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
+              "rWNlB_pLtwgKP68fwZ5GgKXKojGttaeClIC1F-6cBn8"
             ]
           }
         ]
@@ -681,7 +681,7 @@
           },
           {
             "label": "expected presentationHeader (hex)",
-            "observed": "17800740c251ff95b3233efc4287397948870990864ea8a2c267a899b3300b8e",
+            "observed": "01ab02ad1763d5fb3b0e3ae266b0a71552f5827fa24526f17644326e247291d7",
             "note": "Verifier input; checked by bbs-2023."
           }
         ]
@@ -696,7 +696,7 @@
           {
             "label": "bindingId / mode / device contribution",
             "expected": [
-              "urn:uuid:779b9cad-cab5-435a-9d49-4242aed22183",
+              "urn:uuid:ac9a1810-e588-471c-86b8-7bd77a11b427",
               "bbs-bls",
               true
             ],
@@ -850,7 +850,7 @@
     "walletSignatureRequested": false
   },
   "attackerContext": {
-    "id": "7cd85eb6-15d4-47bc-87f7-210e98a92efe",
+    "id": "ba55caca-c6a1-47f7-8ee9-0ae265332604",
     "material": "copied-public-vc",
     "holderKeyAvailable": false,
     "deviceCapabilityAvailable": false,

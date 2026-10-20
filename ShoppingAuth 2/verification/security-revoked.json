@@ -1,12 +1,12 @@
 {
-  "id": "4e6f8526-c210-4354-a058-5a1b42086975",
+  "id": "5c5b6206-26db-4392-9467-867179b120c6",
   "scenarioId": "revoked",
   "scenario": "revoked",
   "kind": "white-box",
   "mode": "bbs-bls",
-  "startedAt": "2026-10-20T04:08:47.244Z",
-  "completedAt": "2026-10-20T04:08:50.049Z",
-  "durationMs": 2805,
+  "startedAt": "2026-10-20T05:06:51.810Z",
+  "completedAt": "2026-10-20T05:06:54.930Z",
+  "durationMs": 3120,
   "completion": "completed",
   "expected": "W3C_CREDENTIAL_REVOKED",
   "actual": "W3C_CREDENTIAL_REVOKED",
@@ -20,7 +20,7 @@
   },
   "control": {
     "accepted": true,
-    "challengeId": "5ce6d921-77d5-4ee8-ba22-90f665962f7a",
+    "challengeId": "0dd192ef-8c41-47b0-9dbd-77f4cd6e7fa9",
     "verificationTrace": {
       "profile": "dbac-payment",
       "source": "agent-b",
@@ -81,8 +81,8 @@
               ],
               "observed": [
                 true,
-                1792469328,
-                1792469388
+                1792472813,
+                1792472873
               ],
               "match": true
             }
@@ -112,8 +112,8 @@
           "evidence": [
             {
               "label": "raw body SHA-256",
-              "expected": "fTTPerXnguqoRBwbmpKB1gxe9U7EpSZkwJQaRpa-0sQ",
-              "observed": "fTTPerXnguqoRBwbmpKB1gxe9U7EpSZkwJQaRpa-0sQ",
+              "expected": "GUw5N3J0IANS8iz4wH1_tccxifSm3wQP3X4AWdX021o",
+              "observed": "GUw5N3J0IANS8iz4wH1_tccxifSm3wQP3X4AWdX021o",
               "match": true
             }
           ]
@@ -165,8 +165,8 @@
             },
             {
               "label": "payment order ID",
-              "expected": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
-              "observed": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
+              "expected": "urn:uuid:21e9872c-0696-4cb0-bf44-5a83995dcf0a",
+              "observed": "urn:uuid:21e9872c-0696-4cb0-bf44-5a83995dcf0a",
               "match": true
             }
           ]
@@ -180,10 +180,10 @@
           "evidence": [
             {
               "label": "trusted merchant / snapshot SHA-256",
-              "expected": "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+              "expected": "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
               "observed": [
-                "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
-                "X4792aPOMriKIwqLJltG-7WGHEOY2Hw37V9JC60nw_g"
+                "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
+                "PiVPx7DOIHaYB1N5Q_YzcOXqnJZDAuR_tckVysvAQ8E"
               ]
             }
           ]
@@ -210,7 +210,7 @@
             },
             {
               "label": "expected presentationHeader (hex)",
-              "observed": "591e2f15a791085417e2b7e77c70186b871010784fc478da0d6cba4140b4e749",
+              "observed": "71481694c7fc47b65b73074cf2d76ceb184948f2d25a6dece7c934b8f0f30558",
               "note": "Verifier input; checked by bbs-2023."
             }
           ]
@@ -240,19 +240,19 @@
             {
               "label": "bindingId / mode / device contribution",
               "expected": [
-                "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+                "urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1",
                 "bbs-bls",
                 true
               ],
               "observed": [
-                "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+                "urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1",
                 "bbs-bls",
                 true
               ]
             },
             {
               "label": "hVC: derived credential hash",
-              "observed": "lJzHXKpXm_jtmpQUdj12HhPu17e49cD8CmsE5mlnXB8"
+              "observed": "iMJQ91_0BFDPRHOyM9BBiXx9d5PbWcTEHDkINZGhBB8"
             }
           ]
         },
@@ -292,14 +292,14 @@
                 "1=payments:pay",
                 "2=2026-10-20",
                 "3=bbs-bls",
-                "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+                "6=urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1"
               ],
               "observed": [
                 "0=authorized-agent",
                 "1=payments:pay",
                 "2=2026-10-20",
                 "3=bbs-bls",
-                "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+                "6=urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1"
               ]
             }
           ]
@@ -314,16 +314,16 @@
             {
               "label": "Abar / Bbar / Cbar (G1)",
               "observed": [
-                "8aef5d4699728113e5c354d84a2ae7bd6ab4c8e8f4408374e14f1750c25010baff11f3ddc312e3c492b69feef6592a85",
-                "a18270bdb7e468d655a5f460f4a6aa07607cecc9f08ea69a19be32ec45386ce73231f6da36897c8c5250f55884333787",
-                "87bd9e19be5bf0c50803c64c0e8410b9b88c294610ac575e955295f73d7289d712fdb909a4e957a42daafe30572913e2"
+                "8aa4c23bd38e6dbfcc1de9a6e69c4f66759b81db56188e86fb2cd2e14caf105227c37045f1efb382d09847aad3cf2f2f",
+                "850f0d0200fa55cbc5c0b509e0a66f98970d2df3959446a2b548ce221392c4a413d18117efd4a2d1bd027bb13c53bb1d",
+                "91e5429476a0cb90615f23cb0778e8c1e4a75f1ba0fab6da145546f2d125d9b1529f37df89603ea4840bac034927072b"
               ]
             },
             {
               "label": "randomized key (G1) / pi_se (G2)",
               "observed": [
-                "b45d4ce03870e784210b5da785955fe6c9bca9616f032de836be1b2de8edfdd00ded62655c9aae3b801dd3a84e18884f",
-                "b17cf23f30da22140a8873df582724ba28fa7d9954cfb6e22ecf3d2d9decc74c3554f5197f4dbe2c12995232bfb6b0ac00415f8e55d5ee3d83b7ac6cca27c64ad69e012b31b407377ed197a9bd3a55dfd1f1f91a0b4cf4a8e405efeb39bfed4b"
+                "90f0b67d43e994863a8f51271108bc3c02b083dd6a94f9f4c31b5fb139ee1988d6d100ec3ce9fffe98d1a73c0a103056",
+                "93705b34148e4a407ee5c65e5e1e916e25fe1edd486ec63a0169ce567fe4a059f21ef68e7ca8b59e97d869a4c66779a809d62fcacc7812b4ca6adafef9b9e78622c107e66c0a73b0c70d67d8a3ee40d14e43d73e09187c7b53c2e66d78e06dc8"
               ]
             }
           ]
@@ -337,7 +337,7 @@
           "evidence": [
             {
               "label": "hash-to-curve point Q (G2)",
-              "observed": "aa0d6acc706b03372166801c743e827465d8951fc7d88395e2a5868d7718921d557bc553429b8330c4cb11d45504949e11edee4205cb0b9ac8b665fe837660d63d14dfe1db02c50aeacf2f32c380e6304f2b56616e596ebe9af5cd9704d5f418"
+              "observed": "ae8bf1ff236e291045920cd7683d87c53e3eea727518e70d03b5403ddb47f4332893c4194e9455dd4d5f510ff134c7c2137e6591acdc3e8a3bfe0c1bd1915d001f1047590eb006f576f9b238604a21d237643d9c41550d14db0c493cc6a95b2c"
             },
             {
               "label": "e(H0,pi_se) = e(randomizedKey,Q)",
@@ -356,15 +356,15 @@
           "evidence": [
             {
               "label": "Fiat-Shamir challenge",
-              "expected": "52c8da3ef2fd508d6ee9714282bd0a6139bb61d6c74f19d6164a582f5e937ccc",
-              "observed": "52c8da3ef2fd508d6ee9714282bd0a6139bb61d6c74f19d6164a582f5e937ccc",
+              "expected": "2dd2842263676c8a88e0d2a917568fdeda1cb5a59ead1ccc8d4202cd147b9434",
+              "observed": "2dd2842263676c8a88e0d2a917568fdeda1cb5a59ead1ccc8d4202cd147b9434",
               "match": true
             },
             {
               "label": "reconstructed T1 / T2 (G1)",
               "observed": [
-                "8cecd2260a478faa0c9089bebccfbf55fd5b2273a2ecfd7cdfd8a8e436e4f77f1ca0d4de92513294efdb21a2057e7fc9",
-                "8168fb28385f590f1da082991864faffd8a7f60b3a60a9b87f40173b01820f8e25bfe0e48b1d0595c988108191d88839"
+                "ac12b22322e5cc46ccae7540d183070c2e14251190b9e2b623179c46da5db80641d40708b3c2de5ad5b31013be68156f",
+                "b876e2f6627510775e3e096b2fd4b2165016eda79ac8ef0dcffa7d6b3a52a2e0d58c1f60b7375c0ce3f71aaf072c1bc2"
               ]
             }
           ]
@@ -378,7 +378,7 @@
           "evidence": [
             {
               "label": "issuer public key W (G2)",
-              "observed": "8ec7bc5478b3bb4266134d4a81ec0aea85c31705d605c950611d9a8620174248ca462ebe6774ffcf5143d037aa6c0c1f1404df757fd5ac67cac354891990adbb8111c6cee29968e88733118c7cdf5509acdda081e8754fbabd0aac68c3862a14"
+              "observed": "83a5c1a74355705ee90cb2911cfc7dac7af86fa695ea0efe81e5383b8ba13d487eed785c6a93e8f83f201d25959894c70dfed77ae1bcbca50a6d1ffaeb097616c77c21ca84a65aa22d1e72a3b121f00852d668b63b5470bd15d79e3f73b4564a"
             },
             {
               "label": "e(Abar,W) = e(Bbar,G2)",
@@ -398,8 +398,8 @@
             {
               "label": "issuer-protected holder key / signed input digest",
               "observed": [
-                "y2f-0AqB8KHca7gPpMQurweyedBd1ciNMdhXcOS7NTA",
-                "VgVdrOSzfLH1c9zY-83j-LAYP54iaHCWr5BKX1_g6yg"
+                "-KRhILeB2wu8m4kn8fZ-Ve9L_axzgPayyg6N6vpZlZ8",
+                "FCzJP8kpMQqhzij7MSMad9U8dXRCZScX6mhiD93oVq8"
               ],
               "match": true
             }
@@ -418,7 +418,7 @@
               "observed": [
                 "valid",
                 "trusted-local-issuer",
-                "2026-10-20T04:08:49.143Z"
+                "2026-10-20T05:06:53.970Z"
               ],
               "match": true
             }
@@ -439,8 +439,8 @@
               ],
               "observed": [
                 false,
-                1792469329,
-                1792469388
+                1792472813,
+                1792472873
               ]
             },
             {
@@ -552,8 +552,8 @@
             ],
             "observed": [
               true,
-              1792469329,
-              1792469389
+              1792472814,
+              1792472874
             ],
             "match": true
           }
@@ -583,8 +583,8 @@
         "evidence": [
           {
             "label": "raw body SHA-256",
-            "expected": "xTjcCiyTxYNIp48ULo6SLzF6wT1OpHMhONFazshDe_w",
-            "observed": "xTjcCiyTxYNIp48ULo6SLzF6wT1OpHMhONFazshDe_w",
+            "expected": "5K4yHpmA4YFWvHeTDN4Y_ifyDl3cJleB8PTXAhNGLgQ",
+            "observed": "5K4yHpmA4YFWvHeTDN4Y_ifyDl3cJleB8PTXAhNGLgQ",
             "match": true
           }
         ]
@@ -636,8 +636,8 @@
           },
           {
             "label": "payment order ID",
-            "expected": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
-            "observed": "urn:uuid:1353c11d-cfe9-4098-9be7-2613102872eb",
+            "expected": "urn:uuid:21e9872c-0696-4cb0-bf44-5a83995dcf0a",
+            "observed": "urn:uuid:21e9872c-0696-4cb0-bf44-5a83995dcf0a",
             "match": true
           }
         ]
@@ -651,10 +651,10 @@
         "evidence": [
           {
             "label": "trusted merchant / snapshot SHA-256",
-            "expected": "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
+            "expected": "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
             "observed": [
-              "did:key:z6MkfdbfhRz6zvubRegSqP3yx5uS5HPr42nLMgMGuejVD4J9",
-              "X4792aPOMriKIwqLJltG-7WGHEOY2Hw37V9JC60nw_g"
+              "did:key:z6MknvL5tbPDKdoBdiC89arjh3P8JNXDzvcGzcixhGyBaeSD",
+              "PiVPx7DOIHaYB1N5Q_YzcOXqnJZDAuR_tckVysvAQ8E"
             ]
           }
         ]
@@ -681,7 +681,7 @@
           },
           {
             "label": "expected presentationHeader (hex)",
-            "observed": "ad2990102f5ca259c0f58b65b879f93a59a3aa2ba6138a6ab4b20b1e1ab74edf",
+            "observed": "fd439d595456e45fb87fb0e0ed5ede87147442ce68d0b2a8a8bc120bfcef49e6",
             "note": "Verifier input; checked by bbs-2023."
           }
         ]
@@ -711,19 +711,19 @@
           {
             "label": "bindingId / mode / device contribution",
             "expected": [
-              "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+              "urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1",
               "bbs-bls",
               true
             ],
             "observed": [
-              "urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c",
+              "urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1",
               "bbs-bls",
               true
             ]
           },
           {
             "label": "hVC: derived credential hash",
-            "observed": "aIkCKZNhlQf59kDIy_wd4RR87jpBBu3V04g_InOEPHw"
+            "observed": "sNYXIrZ-dfUAX-wT2zfVVt-0jq3QOiWhuYE2O5ezeNk"
           }
         ]
       },
@@ -763,14 +763,14 @@
               "1=payments:pay",
               "2=2026-10-20",
               "3=bbs-bls",
-              "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+              "6=urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1"
             ],
             "observed": [
               "0=authorized-agent",
               "1=payments:pay",
               "2=2026-10-20",
               "3=bbs-bls",
-              "6=urn:uuid:fb98a11c-1aae-4d10-ab47-b0ba0782d94c"
+              "6=urn:uuid:c700b891-59cf-446f-9a4d-bdb8437875b1"
             ]
           }
         ]
@@ -785,16 +785,16 @@
           {
             "label": "Abar / Bbar / Cbar (G1)",
             "observed": [
-              "a34f9bebd3516def63acf91700b9a692e40f9ccfc5d4bb68776de9e2761aae53b41d227a2347bb712808ccd42c5e1bb5",
-              "aca3d7fa4fbea58f7484c7daedd48f2c96c19013f2761c368ce8c46cd044a5493ea76a73f42d8a8ebee8da7297109bab",
-              "86882f467ac2c6c8f3b6df6cfac4828cae8f0b678423375dea13b4af3a99917d34af58f7a8f11754b30a46870599b2db"
+              "838c42d8b4c5f3fe5b25bc032bb55a05dffef998183a237e92a6f3f102cc90544732a676318e54f97d8332883e887eee",
+              "af982ad00c2133e38585a1304aa540e7dfbf0df915a2cb8ee91de073a37abce88a0ba253b999b5656da4a8862bea81b3",
+              "8c9c4322bb63aa61850117ccee8b972aa8e0ad0306b33c08a70e570b6f64091a0514573ef5f53fcb8423f11159e5de83"
             ]
           },
           {
             "label": "randomized key (G1) / pi_se (G2)",
             "observed": [
-              "b45d4ce03870e784210b5da785955fe6c9bca9616f032de836be1b2de8edfdd00ded62655c9aae3b801dd3a84e18884f",
-              "a092d82edbfef133354043f0124adb520d5613637bc58a2d82ce0399e03d5ab65d0e7d571f8d77de8bb72b401ed7a7791473d41465dcd7bf4d4bcc939c07bed66bb51a6d5bf3a549caa2399d052008f47da73e51dca436910509e995497cb724"
+              "90f0b67d43e994863a8f51271108bc3c02b083dd6a94f9f4c31b5fb139ee1988d6d100ec3ce9fffe98d1a73c0a103056",
+              "88d41eb9f7c7d98d493933aefc75c47fb1357a076b28a2ac4a0885aff843f909cca31b825a3169e49d870993152da14f18838dde174ac5faf16118ed759fc88f3e70da65265c1de9e0dda0fcae6c2fdbd7cb619396b30879827f1f9d7557b863"
             ]
           }
         ]
@@ -808,7 +808,7 @@
         "evidence": [
           {
             "label": "hash-to-curve point Q (G2)",
-            "observed": "b2fff7574df94aa8de618fd1be1bd6680ed62f65f59a1a12add417ab7bb0030671547a4db38d63f75d9f5dc7d695e5df086bc60659021ca174d03391b5df68df8d7d7af6e7d232ccfd8eb368664cfeaa464a7822770f1e1858cd10393a0e2941"
+            "observed": "a25b4b65c956dc9eb086a67c28da30b42051c43121bc54c255ccd4b31285f0cbec691d0c62251a265f52f60edff42fda0612be7708d188c1b60116f4850957064d69634440853d92a34343c4358b713e49395b408d05fab5e5b5da502a50778c"
           },
           {
             "label": "e(H0,pi_se) = e(randomizedKey,Q)",
@@ -827,15 +827,15 @@
         "evidence": [
           {
             "label": "Fiat-Shamir challenge",
-            "expected": "28aa644441c76a8141436c6488fd682446ea66ed272123574b2b4c80259150bf",
-            "observed": "28aa644441c76a8141436c6488fd682446ea66ed272123574b2b4c80259150bf",
+            "expected": "38618e5e3da6a5843af9ac863f15790eec2b10109c7524e0b3beed671e74713f",
+            "observed": "38618e5e3da6a5843af9ac863f15790eec2b10109c7524e0b3beed671e74713f",
             "match": true
           },
           {
             "label": "reconstructed T1 / T2 (G1)",
             "observed": [
-              "831b1eb11bb692bc679f9afbe0525dd6e223a3b443fe39842546ca0decfd91bc00d4cffafac6ca7894d1766baddf9360",
-              "a6bfc2fcc705f5a754477f897887fc4f158aa6f53040bc9e96ae3c1e94e16e4b57e425809faa61d9fb8b2c268c0d688f"
+              "809f9131be3d0915dd4f0ce66d3b019c12fa9a310ee6de05e67592813ab84d3276538585e5e0589c055ffbbbac321306",
+              "a6afb1b5b25e8b21107066b1077c8a6006b84de3f5558600a51943b64ecc843e2c63aa7143c63d69c326d2844e4f1033"
             ]
           }
         ]
@@ -849,7 +849,7 @@
         "evidence": [
           {
             "label": "issuer public key W (G2)",
-            "observed": "8ec7bc5478b3bb4266134d4a81ec0aea85c31705d605c950611d9a8620174248ca462ebe6774ffcf5143d037aa6c0c1f1404df757fd5ac67cac354891990adbb8111c6cee29968e88733118c7cdf5509acdda081e8754fbabd0aac68c3862a14"
+            "observed": "83a5c1a74355705ee90cb2911cfc7dac7af86fa695ea0efe81e5383b8ba13d487eed785c6a93e8f83f201d25959894c70dfed77ae1bcbca50a6d1ffaeb097616c77c21ca84a65aa22d1e72a3b121f00852d668b63b5470bd15d79e3f73b4564a"
           },
           {
             "label": "e(Abar,W) = e(Bbar,G2)",
@@ -869,8 +869,8 @@
           {
             "label": "issuer-protected holder key / signed input digest",
             "observed": [
-              "y2f-0AqB8KHca7gPpMQurweyedBd1ciNMdhXcOS7NTA",
-              "yDE0SdV-18k7J2q6XEIwKgd-T8XEe4TcoZy0D5ksPk0"
+              "-KRhILeB2wu8m4kn8fZ-Ve9L_axzgPayyg6N6vpZlZ8",
+              "ulGmj5mtekSDcXU1TgvTaolQvJP6RXLcpsWs_hpEzoc"
             ],
             "match": true
           }
@@ -889,7 +889,7 @@
             "observed": [
               "revoked",
               "trusted-local-issuer",
-              "2026-10-20T04:08:50.000Z"
+              "2026-10-20T05:06:54.874Z"
             ],
             "match": false
           }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#edf5ff">
+  <meta name="theme-color" content="#f5f7fb">
   <meta name="referrer" content="no-referrer">
   <meta name="description" content="以 BBS 可验证凭证、设备绑定 BLS 签名与持有者独立签名，验证智能体在每次 A2A 请求中的实际参与。">
   <title>AGENT TRUST · 防凭证冒用的智能体可信身份认证框架</title>
@@ -33,16 +33,6 @@
           <title id="map-title">Issuer、Agent A、软件 eSIM 和 Agent B 的信任关系</title>
           <desc id="map-description">Issuer 签发标准 BBS VC 与配套设备绑定凭证。Agent B 给出挑战，Agent A 派生凭证并请求设备贡献。软件 eSIM 返回设备签名贡献，Agent A 校验、组合并提交持有者独立签名，由 Agent B 检查双方证明、请求绑定及撤销状态。本图是技术架构，不表示已完成认证。</desc>
           <defs>
-            <radialGradient id="core-glow">
-              <stop stop-color="#b9d8ff" stop-opacity=".65"/>
-              <stop offset=".32" stop-color="#b9d8ff" stop-opacity=".38"/>
-              <stop offset=".7" stop-color="#b9d8ff" stop-opacity=".13"/>
-              <stop offset="1" stop-color="#b9d8ff" stop-opacity="0"/>
-            </radialGradient>
-            <radialGradient id="verify-glow">
-              <stop stop-color="#b9d8ff" stop-opacity=".25"/>
-              <stop offset="1" stop-color="#b9d8ff" stop-opacity="0"/>
-            </radialGradient>
             <linearGradient id="core-surface" x1="0" y1="0" x2="1" y2="1">
               <stop stop-color="#f7fbff"/>
               <stop offset=".55" stop-color="#e3efff"/>
@@ -66,9 +56,7 @@
             </marker>
           </defs>
 
-          <!-- Light and construction lines never indicate a protocol outcome. -->
-          <ellipse cx="326" cy="312" rx="286" ry="235" fill="url(#core-glow)"/>
-          <ellipse cx="469" cy="407" rx="185" ry="150" fill="url(#verify-glow)"/>
+          <!-- Construction lines never indicate a protocol outcome. -->
           <rect width="660" height="560" fill="url(#map-grid)" mask="url(#grid-mask)"/>
           <g class="map-frame">
             <path d="m145 237 196-107 239 138-196 111Z"/>

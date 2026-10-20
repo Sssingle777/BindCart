@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-20T03:47:03.058Z",
+  "startedAt": "2026-10-20T05:03:40.267Z",
   "realCryptoAndChain": true,
   "localTestOnly": true,
   "checks": [
@@ -14,7 +14,7 @@
     {
       "name": "Real challenge expiry stays stopped; explicit fresh challenge does not call the device and stale attempts are rejected",
       "passed": true,
-      "waitedMs": 59363
+      "waitedMs": 59064
     },
     {
       "name": "Every credential/challenge/derived-VC/device/proof/verification/submission step needs its own click; payment opens only after qualification",
@@ -31,7 +31,7 @@
     {
       "name": "Explicit merchant confirmation completes the purchase, all three actual proof traces pass, and querying cannot pay again",
       "passed": true,
-      "transactionHash": "0x8c465af4da738f7333b473d7c288aef003f0ee63a2b0911aa7b2746a38e71df4",
+      "transactionHash": "0xa7119ff520c56756731243572109ea042cc58896a7a72a02f5d8ad5dcf40f074",
       "executionCount": 1
     },
     {
@@ -458,5 +458,5 @@
     "07-manual-payment-complete.png"
   ],
   "status": "passed",
-  "finishedAt": "2026-10-20T03:49:12.645Z"
+  "finishedAt": "2026-10-20T05:05:51.797Z"
 }
