@@ -87681,18 +87681,18 @@
   },
   {
     "path": "app/public/intro.css",
-    "bytes": 22860,
-    "sha256": "4a0a4b075a72264b620657e503dcb6252c10547d27c9f744cab230c113765020"
+    "bytes": 37954,
+    "sha256": "09db2d17e067a09ad75b65509e8f63d18c82994a58fac629733bc516057617ba"
   },
   {
     "path": "app/public/intro.html",
-    "bytes": 22648,
-    "sha256": "730bf9f930b92d46ba42be55a3056e3a0ea5c2187a0eb9529dfd5ec6b4988ebc"
+    "bytes": 25235,
+    "sha256": "9bcd89d2bbadd4b58a3564fa58d8c46ca5cf5a7648bc2d893569bfdcdda74106"
   },
   {
     "path": "app/public/intro.js",
-    "bytes": 2555,
-    "sha256": "fe3f4c17996c27f7f284e68bb094d101414997e7c8afc4a93c3764d0bb5a374e"
+    "bytes": 7749,
+    "sha256": "4ec10adb0385fe998c3b6b2cfd6117b0ca3e19f719320c425621378d025c193f"
   },
   {
     "path": "app/public/live-feed.js",
@@ -88446,8 +88446,8 @@
   },
   {
     "path": "app/scripts/intro-ui-check.mjs",
-    "bytes": 16606,
-    "sha256": "c4b6fd5a9c4c658e778c42597578c265d341a49169b8e1b2f93d8052b9e1b70f"
+    "bytes": 16654,
+    "sha256": "1ae91ad1437a4c9b8efebf0d78874a1ee9b915dcfe208971399d6dace08727b9"
   },
   {
     "path": "app/scripts/jcardsim-selftest.mjs",

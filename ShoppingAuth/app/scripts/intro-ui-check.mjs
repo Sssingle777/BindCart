@@ -14,7 +14,7 @@ const redact = value => { let text = String(value); for (const value of caps.val
 const pass = name => { report.checks.push({ name, passed: true }); console.log(`PASS ${name}`); };
 const browser = await launchAcceptanceBrowser({ headless: true });
 report.browserVersion = browser.version();
-const context = await browser.newContext({ viewport: { width: 1920, height: 1080 }, locale: 'zh-CN' });
+const context = await browser.newContext({ viewport: { width: 1920, height: 1080 }, locale: 'zh-CN', reducedMotion: 'reduce' });
 await context.route('**/*', route => {
   if (new URL(route.request().url()).origin !== runtime.baseUrl) { report.externalRequests.push(new URL(route.request().url()).origin); return route.abort(); }
   return route.continue();
@@ -148,7 +148,7 @@ try {
   assert(await page.locator('#demo-title').isVisible());
   pass('Four requested viewports have no horizontal overflow; section navigation and anchor reload work');
   await page.emulateMedia({ reducedMotion:'reduce' });
-  assert.equal(await page.locator('.flow-highlight').evaluate(el => getComputedStyle(el).animationName),'none');
+  assert(await page.locator('.flow-highlight').evaluateAll(nodes => nodes.every(el => getComputedStyle(el).animationName === 'none')));
   await page.emulateMedia({ reducedMotion:'no-preference' });
   pass('Reduced-motion preference disables diagram animation');
   await page.evaluate(() => scrollTo(0,0));
