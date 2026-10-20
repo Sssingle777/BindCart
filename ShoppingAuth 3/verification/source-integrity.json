@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "baseline": "ShoppingAuth-Visual-Release-20261019",
+  "comparedFiles": 17917,
+  "byteIdenticalFiles": 17913,
+  "changedFiles": [
+    {
+      "path": "app/public/dual.css",
+      "beforeSha256": "624c26747ca800943ce38655fcb149e923db2d71640f4d7ad82c94d050be3766",
+      "afterSha256": "10d08cf00246c339ef6a9d711d5a54356d17d7305497db5e8a69d73b5678e381"
+    },
+    {
+      "path": "app/public/intro.css",
+      "beforeSha256": "af502134fa0c6163359372c2f426ee68f7d6b7134d19ab470a822266540fd46f",
+      "afterSha256": "15d8663c8838921e9b08a59c7bd7afa32632053d5efdc41093e40114206a439e"
+    },
+    {
+      "path": "app/public/intro.html",
+      "beforeSha256": "c30b87bd33339a96265d3b41386a449a30837255b19af9a35786b4ad7f51e579",
+      "afterSha256": "9833bd7c19ff9ecb462abf09caf6705c400c3497a3f424fd80aa17a115bd3aa4"
+    },
+    {
+      "path": "app/public/mechanism-visual.css",
+      "beforeSha256": "d42950cab9e1d1cf4d8a10f92b47d2db291bb963a6362d01bbe60949306c9b40",
+      "afterSha256": "fef4c44204ff6c1d3d174321036eb64ed518d5b932d4a8df0a3d43bd1fee8a3c"
+    }
+  ],
+  "addedApplicationFiles": [],
+  "missingFiles": [],
+  "previousArchiveUnchanged": true,
+  "previousArchiveSha256": "7d9daf32c78a7f42f378c1ff16ea001b321362cf39013602950158c4d13694d6",
+  "protectedCodeAndAssetsUnchanged": true,
+  "sharedStylesUnchanged": true,
+  "allDependenciesAndRuntimesUnchanged": true,
+  "businessLogicChanged": false,
+  "cryptoLogicChanged": false
+}

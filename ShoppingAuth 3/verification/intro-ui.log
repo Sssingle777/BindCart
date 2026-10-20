@@ -1,0 +1,15 @@
+
+> a2a-jcardsim-x402@0.5.0 test:intro-ui
+> node scripts/intro-ui-check.mjs
+
+[acceptance-browser] channel msedge; version 155.0.4283.45
+PASS Intro resources use the existing CSP, preserve both capabilities in sessionStorage, clear fragments, and issue no business or external requests
+PASS Four requested viewports have no horizontal overflow; section navigation and anchor reload work
+PASS Reduced-motion preference disables diagram animation
+PASS Same-tab introduction-to-demo navigation loads both real iframes and all six roles without business POSTs
+PASS Both desktop sizes support side/stack/fullscreen; actual six-role positions and dimensions match original CSS
+PASS Role evidence dialog remains clickable
+PASS Processing, pass, failure, waiting, unknown and idle have six distinct CSS color treatments
+PASS Anonymous and malformed capabilities stay on the introduction, with a launcher prompt and no false connection claim
+PASS Partial new launch capabilities cannot reuse a stale Owner key
+PASS Storage-denied browser still removes secret fragments and explains recovery

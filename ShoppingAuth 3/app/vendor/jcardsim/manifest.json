@@ -1,0 +1,56 @@
+{
+  "distribution": "com.klinec:jcardsim:3.0.6.0",
+  "upstream": "https://github.com/licel/jcardsim",
+  "distributionSource": "https://github.com/ph4r05/jcardsim",
+  "artifacts": [
+    {
+      "file": "jcardsim-3.0.6.0.jar",
+      "source": "https://repo.maven.apache.org/maven2/com/klinec/jcardsim/3.0.6.0/jcardsim-3.0.6.0.jar",
+      "sha256": "db6de7ffde71651c45d00df7e160771685cec3e14e444bf36b796658d289942f",
+      "mavenSha1": "826e315e72e158e67c534c5be2e90e8cf7be76d8",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "jcardsim-3.0.6.0.pom",
+      "source": "https://repo.maven.apache.org/maven2/com/klinec/jcardsim/3.0.6.0/jcardsim-3.0.6.0.pom",
+      "sha256": "213187ebcd44b51f7a4599c9ff633cf8745bc9519ed4ffb4b218deeae0ee3059",
+      "mavenSha1": "d7118ffaf092c281b62bb193e818d0303f1abec5",
+      "license": "Apache-2.0"
+    },
+    {
+      "file": "asm-7.2.jar",
+      "source": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.jar",
+      "sha256": "7e6cc9e92eb94d04e39356c6d8144ca058cda961c344a7f62166a405f3206672",
+      "mavenSha1": "fa637eb67eb7628c915d73762b681ae7ff0b9731",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "file": "asm-commons-7.2.jar",
+      "source": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar",
+      "sha256": "0e86b8b179c5fb223d1a880a0ff4960b6978223984b94e62e71135f2d8ea3558",
+      "mavenSha1": "ca2954e8d92a05bacc28ff465b25c70e0f512497",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "file": "asm-tree-7.2.jar",
+      "source": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar",
+      "sha256": "c063f5a67fa03cdc9bd79fd1c2ea6816cc4a19473ecdfbd9e9153b408c6f2656",
+      "mavenSha1": "3a23cc36edaf8fc5a89cb100182758ccb5991487",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "file": "asm-util-7.2.jar",
+      "source": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/7.2/asm-util-7.2.jar",
+      "sha256": "6e24913b021ffacfe8e7e053d6e0ccc731941148cfa078d4f1ed3d96904530f8",
+      "mavenSha1": "a3ae34e57fa8a4040e28247291d0cc3d6b8c7bcf",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "file": "asm-analysis-7.2.jar",
+      "source": "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar",
+      "sha256": "be922aae60ff1ff1768e8e6544a38a7f92bd0a6d6b0b9791f94955d1bd453de2",
+      "mavenSha1": "b6e6abe057f23630113f4167c34bda7086691258",
+      "license": "BSD-3-Clause"
+    }
+  ]
+}

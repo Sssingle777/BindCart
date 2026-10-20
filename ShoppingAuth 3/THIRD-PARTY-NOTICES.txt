@@ -1,0 +1,28 @@
+﻿ShoppingAuth · 第三方组件与来源
+
+1. Node.js 24.19.0
+官方来源：https://nodejs.org/dist/v24.19.0/
+包含 Windows x64、macOS arm64、macOS x64；每套附带 LICENSE。
+原发行校验及内置文件 SHA256 见 runtime/node-SHASUMS256.txt 与 runtime/provenance.json。
+
+2. 当前 MyStore 商城
+来源：https://www.mystoredemo.io/
+使用该站完整公开部署构建，原文件保存在 app/third-party/mystore-web，来源 URL 与 SHA256 见 SOURCE-MANIFEST.json。
+应用级开源许可证未确认，不将“公开部署”称作“MIT 开源”。上游构建包含的依赖许可、Inter 字体许可均保留。
+只对本地副本进行集中汉化和控制器接线，保留原样式及商品素材。
+接线变更、原始构建与改后哈希见 app/public/store/mystore-integration-manifest.json 及 scripts/build-mystore-local.mjs。
+本包不是 Adyen 官方发布产品，也未连接真实 PSP 或银行。
+
+3. 原归档付款示例
+app/third-party/adyen-checkout 保留原 MIT 许可、固定提交来源和模板，仅作历史核对，不是当前完整商城前端。
+来源：https://github.com/adyen-examples/adyen-node-online-payments
+
+4. 运行依赖
+版本见 app/package-lock.json 和 runtime/dependency-packages.json。
+依赖原 LICENSE、NOTICE 随包保留，未按 test/dist/lib 等文件夹名删除运行文件。
+包含 Digital Bazaar W3C BBS、noble、x402、viem、Ganache、solc 等。
+原生依赖保留 Windows 与 Mac 的预构建组件；可选加速不能用时使用其上游 JavaScript 回退。
+
+5. 原项目其他材料
+app/vendor 与 javacard 保留原来源与许可。本包双页入口使用软件 eSIM，不启动 Java 服务。
+verification-baseline 仅用于核对恢复的界面，不作为另一个商城运行。
