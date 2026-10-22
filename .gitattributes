@@ -1,3 +1,4 @@
+# 支撑材料中的运行时文件使用 Git LFS 存储。
 **/runtime/mac-arm64/node filter=lfs diff=lfs merge=lfs -text
 **/runtime/mac-x64/node filter=lfs diff=lfs merge=lfs -text
 **/runtime/win-x64/node.exe filter=lfs diff=lfs merge=lfs -text
