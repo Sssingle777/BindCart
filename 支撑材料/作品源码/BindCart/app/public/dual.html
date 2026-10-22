@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#edf5ff"><title>BindCart · 智能体购物演示</title><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/demo/style.css"><script type="module" src="/demo/app.js"></script></head>
+<body data-layout="side">
+<aside class="startup-help" role="status"><h1>请从压缩包的启动入口打开完整演示</h1><p>请先完整解压。在解压后的项目文件夹中，Windows 双击 Start-Windows.cmd；Mac 双击 Start-Mac.command。</p><p>启动器会自动运行本地服务并打开商城与机制页面，无需安装 Node 或 Java。</p><p>当前文件是界面模板，直接打开时不能加载完整程序。</p><hr></aside>
+<header class="presentation-bar">
+  <div class="presentation-brand">
+    <span class="brand-orbit" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20 3.9 34 9.2v10.2c0 8.2-6.1 14.2-14 16.7-7.9-2.5-14-8.5-14-16.7V9.2L20 3.9Z"/><path d="m13.4 20.1 4.3 4.3 9-9.2" stroke-width="2.1"/><path d="M14 30.7h12" opacity=".45"/></svg></span>
+    <div class="brand-text"><strong>BindCart</strong><p>基于 eSIMBind · 智能体购物演示</p></div>
+  </div>
+  <div class="presentation-chips" aria-label="演示环境">
+    <span class="presentation-chip"><span class="chip-dot" aria-hidden="true"></span>真实密码学</span>
+    <span class="presentation-chip">本地测试链</span>
+    <span class="presentation-chip">逐笔确认</span>
+  </div>
+  <div class="presentation-live"><span class="live-orb" aria-hidden="true"></span><p id="dual-status" role="status">正在打开两边页面…</p></div>
+  <nav class="layout-switch" aria-label="展示布局">
+    <button type="button" data-layout="side" aria-pressed="true" aria-label="左右并排" title="左右并排"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="2.2" y="3.2" width="5.6" height="11.6" rx="1.2"/><rect x="10.2" y="3.2" width="5.6" height="11.6" rx="1.2"/></svg><span>并排</span></button>
+    <button type="button" data-layout="stack" aria-pressed="false" aria-label="上下排列" title="上下排列"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3.2" y="2.2" width="11.6" height="5.6" rx="1.2"/><rect x="3.2" y="10.2" width="11.6" height="5.6" rx="1.2"/></svg><span>上下</span></button>
+    <span class="layout-divider" aria-hidden="true"></span>
+    <button type="button" id="dual-fullscreen" aria-label="全屏展示" title="全屏展示"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M6.6 2.4H2.4v4.2M11.4 2.4h4.2v4.2M6.6 15.6H2.4v-4.2M11.4 15.6h4.2v-4.2"/></svg><span>全屏</span></button>
+  </nav>
+</header>
+<main class="dual-workspace">
+  <section class="app-window app-window-store">
+    <header class="window-bar">
+      <div class="window-identity"><span class="window-lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="window-step">01</span><div class="window-copy"><strong>商城前端</strong><small>MyStore Demo · 第三方演示平台</small></div></div>
+      <div class="window-actions"><span class="window-tag">商城操作</span><a id="open-store" target="_blank" rel="noopener">单独打开<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h6v6M11 3 5.6 8.4M10 8.7V11H3V4h2.3"/></svg></a></div>
+    </header>
+    <div class="frame-surface"><iframe id="store-frame" title="商城前端：Adyen 提供的 MyStore Demo 第三方演示页面" referrerpolicy="no-referrer"></iframe></div>
+  </section>
+  <section class="app-window app-window-mechanism">
+    <header class="window-bar">
+      <div class="window-identity"><span class="window-lights" aria-hidden="true"><i></i><i></i><i></i></span><span class="window-step">02</span><div class="window-copy"><strong>实时机制控制台</strong><small>同一订单 · 实际运行状态与验证证据</small></div></div>
+      <div class="window-actions"><span class="window-tag">实时观察</span><a id="open-mechanism" target="_blank" rel="noopener">单独打开<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h6v6M11 3 5.6 8.4M10 8.7V11H3V4h2.3"/></svg></a></div>
+    </header>
+    <div class="frame-surface"><iframe id="mechanism-frame" title="后端机制：原控制器实时状态与验证过程" referrerpolicy="no-referrer"></iframe></div>
+  </section>
+</main>
+<footer class="presentation-foot">
+  <div class="foot-flow"><b>演示路径</b><span>选购</span><i>→</i><span>资格验证</span><i>→</i><span>用户确认</span><i>→</i><span>模拟付款</span><i>→</i><span>商户确认</span></div>
+  <div class="foot-notes"><span><span class="foot-led" aria-hidden="true"></span>结论来自后端实际返回</span><span>挑战 60 秒真实有效期</span><span>TEST_USDC · 无真实资金价值</span></div>
+</footer>
+<noscript>请启用 JavaScript 以打开本地双页演示。</noscript></body></html>

@@ -1,0 +1,8 @@
+BindCart 0.5.1 程序主要代码与运行包
+
+BindCart/app 是实际运行源码。完整 Node 运行时和锁定依赖随包附带；进入 BindCart 后双击对应 Start 脚本即可启动，Check 脚本可核验发布文件与真实付款。
+自有代码、资源与说明文件的哈希见源码文件哈希.json；完整程序清单见 BindCart/FILE-SHA256.json。
+核心：app/lib/dbac/、lib/w3c-bbs.mjs、lib/x402-payment.mjs、lib/storefront/、launch-dual.mjs。
+界面：app/public/、owner-public/。测试：app/test/ 与提交文件夹中的 支撑材料/02_测试代码。
+当前主线使用 Node 软件 eSIM；第三方来源、许可和所需共享模块随包保留。
+包内没有既有订单、钱包和运行状态。源码开发安装见 app/README.md，完整包无需再次 npm ci。

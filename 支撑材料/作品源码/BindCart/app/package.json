@@ -1,0 +1,45 @@
+{
+  "name": "bindcart",
+  "version": "0.5.1",
+  "private": true,
+  "type": "module",
+  "description": "BindCart W3C BBS device-bound credentials and local x402 payment demo",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node ../portable.mjs start",
+    "stop": "node ../portable.mjs stop",
+    "start:dual": "node ../portable.mjs start",
+    "start:headless": "node ../portable.mjs start --no-browser",
+    "start:dbac": "node launch-dbac.mjs",
+    "check": "node ../verify-package.mjs",
+    "test": "node scripts/test.mjs",
+    "test:delivery": "node --test test/delivery-flow.test.mjs",
+    "test:dual": "node scripts/test.mjs dual",
+    "test:dbac": "node scripts/test.mjs dbac",
+    "test:x402": "node --test test/x402-payment.test.mjs",
+    "test:intro-ui": "node scripts/intro-ui-check.mjs",
+    "styles:sync": "node scripts/sync-platform-styles.mjs",
+    "styles:check": "node scripts/sync-platform-styles.mjs --check"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1"
+  },
+  "dependencies": {
+    "@digitalbazaar/bbs-2023-cryptosuite": "2.0.1",
+    "@digitalbazaar/bls12-381-multikey": "2.2.0",
+    "@digitalbazaar/credentials-context": "3.2.0",
+    "@digitalbazaar/data-integrity": "2.5.0",
+    "@digitalbazaar/data-integrity-context": "2.0.1",
+    "@digitalbazaar/multikey-context": "2.0.1",
+    "@noble/curves": "1.9.1",
+    "@x402/core": "2.28.0",
+    "@x402/evm": "2.28.0",
+    "ganache": "7.9.2",
+    "jsonld-signatures": "11.6.0",
+    "playwright-core": "1.62.1",
+    "solc": "0.8.30",
+    "viem": "2.57.2"
+  }
+}

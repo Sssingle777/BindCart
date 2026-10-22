@@ -1,0 +1,47 @@
+BindCart 测试复现说明
+
+一、运行准备
+在“支撑材料”目录打开终端。测试脚本使用随包提供的作品源码和依赖，源码位置为 ../作品源码/BindCart/app。
+
+下列命令中的 node 按操作系统替换为对应运行时路径：
+Windows x64：..\作品源码\BindCart\runtime\win-x64\node.exe
+macOS Apple Silicon：../作品源码/BindCart/runtime/mac-arm64/node
+macOS Intel：../作品源码/BindCart/runtime/mac-x64/node
+已安装 Node.js 22.13 或以上版本时，也可直接使用 node。
+
+二、基础测试
+完整回归：
+node ../作品源码/BindCart/app/scripts/test.mjs
+
+购物与付款流程：
+node --test ../作品源码/BindCart/app/test/delivery-flow.test.mjs
+
+三、专项测试
+1. 安全性：普通与盲化两种模式，各执行 15 个用例。
+node 02_测试代码/run-verification.mjs security
+
+2. 性能：每种模式预热 1 笔，再顺序测量 10 笔订单。
+node 02_测试代码/run-verification.mjs performance
+
+3. 通信开销：统计三个认证阶段的请求与响应字节数。
+node 02_测试代码/run-communication.mjs
+
+4. 计算开销：加载计时模块，测量凭证派生、设备签名、联合证明和验证等操作。
+node --import ./02_测试代码/instrument.mjs 02_测试代码/run-compute.mjs
+
+5. 状态一致性：检查并发提交、无效证明和状态服务等六项场景。
+node --test 02_测试代码/consistency-probes.test.mjs
+
+6. 付款幂等性：比较首次付款、原证明重放和新证明重试的交易回执与执行次数。
+node 02_测试代码/run-payment-check.mjs
+
+四、浏览器流程
+安装 Chrome 或 Edge 后执行：
+node 02_测试代码/capture-evidence.mjs
+node 02_测试代码/capture-normal.mjs
+可通过 PLAYWRIGHT_BROWSER_CHANNEL 选择浏览器：chrome 对应 Chrome，msedge 对应 Edge。
+
+五、查看输出
+终端显示各项执行状态；专项数据写入脚本所在目录，浏览器输出写入 ui-evidence 或 normal-evidence 子目录。测试方法与结果见作品报告第四部分。
+
+通信和计算测试使用相同的输出文件名。分别执行这两项测试时，将“02_测试代码”复制为“02_测试代码_通信”和“02_测试代码_计算”，在命令中使用对应目录名；计算命令中的 instrument.mjs 与 run-compute.mjs 使用同一目录。重复测量也可按轮次建立同级目录。

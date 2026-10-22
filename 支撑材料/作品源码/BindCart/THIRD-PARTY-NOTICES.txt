@@ -1,0 +1,30 @@
+BindCart · 第三方组件与来源
+
+1. Node.js 24.19.0
+官方来源：https://nodejs.org/dist/v24.19.0/
+包含 Windows x64、macOS arm64、macOS x64；每套附带 LICENSE。
+原发行校验及内置文件 SHA256 见 runtime/node-SHASUMS256.txt 与 runtime/provenance.json。
+
+2. MyStore Demo 第三方展示与测试环境
+本项目引入 Adyen 提供的 MyStore Demo 在线支付演示平台，作为系统的第三方展示与测试环境，用于模拟真实电商场景下的商品选购及支付流程。
+该平台仅承担业务场景展示功能，不属于本项目的核心技术实现，也不计入团队自主研发成果。项目的核心功能及创新点由团队独立设计与实现。
+第三方平台来源：https://www.mystoredemo.io/
+交付包保留该平台公开部署构建的原始资源，存放于 app/third-party/mystore-web；来源 URL 与 SHA256 见 SOURCE-MANIFEST.json。
+上游构建包含的依赖许可、Inter 字体许可和相关版权声明均保留，具体内容见随附许可文件。
+本地副本进行了集中汉化和控制器接线，保留原样式及商品素材。
+接线变更、原始构建与改后哈希见 app/public/store/mystore-integration-manifest.json 及 scripts/build-mystore-local.mjs。
+本包不是 Adyen 官方发布产品，也未连接真实 PSP 或银行。
+
+3. 原归档付款示例
+app/third-party/adyen-checkout 保留原 MIT 许可、固定提交来源和模板，仅作历史核对，不是当前完整商城前端。
+来源：https://github.com/adyen-examples/adyen-node-online-payments
+
+4. 运行依赖
+版本见 app/package-lock.json 和 runtime/dependency-packages.json。
+依赖原 LICENSE、NOTICE 随包保留，未按 test/dist/lib 等文件夹名删除运行文件。
+包含 Digital Bazaar W3C BBS、noble、x402、viem、Ganache、solc 等。
+原生依赖保留 Windows 与 Mac 的预构建组件；可选加速不能用时使用其上游 JavaScript 回退。
+
+5. 原项目其他材料
+当前使用的 app/vendor 与 third-party 来源和许可继续保留。主线使用独立 Node BLS 软件 eSIM。
+原归档的 Adyen 模板和来源清单仍供现有页面资源及来源核对使用。
